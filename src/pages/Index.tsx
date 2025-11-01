@@ -26,7 +26,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm text-white text-sm font-semibold mb-6 border border-white/20">
               <Trophy className="h-4 w-4" />
-              Ranking 2024 Atualizado
+              Ranking 2025 Atualizado
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
@@ -50,16 +50,16 @@ const Index = () => {
 
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center gap-2 text-white">
-                <CheckCircle2 className="h-5 w-5 text-accent" />
-                <span>100% Gratuito</span>
+                <CheckCircle2 className="h-5 w-5 text-green-400" />
+                <span className="font-medium">100% Gratuito</span>
               </div>
               <div className="flex items-center gap-2 text-white">
-                <CheckCircle2 className="h-5 w-5 text-accent" />
-                <span>Análises Detalhadas</span>
+                <CheckCircle2 className="h-5 w-5 text-blue-400" />
+                <span className="font-medium">Análises Detalhadas</span>
               </div>
               <div className="flex items-center gap-2 text-white">
-                <CheckCircle2 className="h-5 w-5 text-accent" />
-                <span>Atualizado 2024</span>
+                <CheckCircle2 className="h-5 w-5 text-yellow-400" />
+                <span className="font-medium">Atualizado 2025</span>
               </div>
             </div>
           </div>
@@ -71,8 +71,11 @@ const Index = () => {
       </section>
 
       {/* Ranking Section */}
-      <section className="container pb-20">
+      <section className="container pb-20 pt-16">
         <div className="mb-12 text-center">
+          <div className="flex justify-center mb-4">
+            <Trophy className="h-12 w-12 text-yellow-500" />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ranking das Plataformas
           </h2>

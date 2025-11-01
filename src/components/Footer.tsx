@@ -80,7 +80,17 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} LojasGrátis. Todos os direitos reservados.</p>
+          <p>
+            © Copyright 2025 | Lojas Grátis | Todos os direitos reservados | Desenvolvido por{' '}
+            <a 
+              href="https://danielolimpio.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              DanielOlimpio
+            </a>
+          </p>
         </div>
       </div>
     </footer>
