@@ -13,13 +13,13 @@ const Header = () => {
         
         <nav className="hidden md:flex items-center gap-6">
           <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Ranking
+            Início
           </Link>
-          <Link to="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Blog
+          <Link to="/sobre" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            Sobre
           </Link>
-          <Link to="/comparar" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Comparar
+          <Link to="/contato" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            Contato
           </Link>
         </nav>
 

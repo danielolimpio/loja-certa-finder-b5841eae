@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, XCircle, Star, Clock, Shield, CreditCard, Zap } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { platforms } from "@/data/platforms";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -341,12 +342,7 @@ const PlatformDetail = () => {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="border-t bg-secondary/30 mt-20">
-        <div className="container py-8 text-center text-sm text-muted-foreground">
-          <p>© 2024 LojasGrátis.com.br - Todos os direitos reservados</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

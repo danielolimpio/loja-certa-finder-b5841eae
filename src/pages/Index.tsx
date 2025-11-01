@@ -1,5 +1,6 @@
 import { ArrowDown, CheckCircle2, Trophy, Search } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import PlatformCard from "@/components/PlatformCard";
 import { platforms } from "@/data/platforms";
 import { Button } from "@/components/ui/button";
@@ -104,15 +105,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t bg-secondary/30">
-        <div className="container py-8 text-center text-sm text-muted-foreground">
-          <p>© 2024 LojasGrátis.com.br - Todos os direitos reservados</p>
-          <p className="mt-2">
-            Informações atualizadas regularmente. Preços e recursos podem variar.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
