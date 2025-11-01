@@ -15,6 +15,12 @@ const Header = () => {
           <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Início
           </Link>
+          <Link to="/ranking" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            Ranking
+          </Link>
+          <Link to="/comparar" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            Comparar
+          </Link>
           <Link to="/sobre" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Sobre
           </Link>

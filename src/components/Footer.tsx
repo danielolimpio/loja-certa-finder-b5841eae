@@ -28,6 +28,16 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/ranking" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Ranking
+                </Link>
+              </li>
+              <li>
+                <Link to="/comparar" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Comparar
+                </Link>
+              </li>
+              <li>
                 <Link to="/sobre" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Sobre
                 </Link>
