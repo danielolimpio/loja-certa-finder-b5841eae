@@ -74,6 +74,11 @@ const Footer = () => {
                   Política de Transparência
                 </Link>
               </li>
+              <li>
+                <Link to="/sitemap" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Mapa do Site
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
