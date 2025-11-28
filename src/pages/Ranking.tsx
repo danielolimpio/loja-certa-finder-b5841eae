@@ -3,6 +3,7 @@ import { Trophy, TrendingUp, Award } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PlatformCard from "@/components/PlatformCard";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { platforms } from "@/data/platforms";
 
 const Ranking = () => {
@@ -18,6 +19,10 @@ const Ranking = () => {
       </Helmet>
 
       <Header />
+      
+      <div className="container mt-6">
+        <BreadcrumbNav items={[{ label: "Ranking" }]} />
+      </div>
       
       {/* Hero Section */}
       <section className="container py-12 md:py-16">

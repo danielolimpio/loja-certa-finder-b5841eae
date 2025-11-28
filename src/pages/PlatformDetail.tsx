@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, XCircle, Star, Clock, Shield, CreditCard, Zap } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { platforms } from "@/data/platforms";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -33,6 +34,13 @@ const PlatformDetail = () => {
       <Header />
       
       <div className="container py-8">
+        <BreadcrumbNav 
+          items={[
+            { label: "Ranking", href: "/ranking" },
+            { label: platform.name }
+          ]} 
+        />
+        
         <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" />
           Voltar para o ranking

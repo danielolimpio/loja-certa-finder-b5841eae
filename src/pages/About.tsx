@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { Target, Users, Award, TrendingUp } from "lucide-react";
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
         
         <main className="flex-1">
           <div className="container py-12">
+            <BreadcrumbNav items={[{ label: "Sobre" }]} />
             {/* Hero Section */}
             <div className="max-w-4xl mx-auto text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">

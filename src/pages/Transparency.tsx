@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { Eye, DollarSign, CheckCircle, Target } from "lucide-react";
 
 const Transparency = () => {
@@ -16,6 +17,7 @@ const Transparency = () => {
         
         <main className="flex-1">
           <div className="container py-12">
+            <BreadcrumbNav items={[{ label: "Transparência" }]} />
             <div className="max-w-4xl mx-auto">
               {/* Header */}
               <div className="text-center mb-12">

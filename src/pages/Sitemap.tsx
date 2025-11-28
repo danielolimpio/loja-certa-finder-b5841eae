@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { Map, Home, BarChart3, GitCompare, Info, Mail, Shield, Cookie, FileText, Eye } from "lucide-react";
 
 const Sitemap = () => {
@@ -16,6 +17,8 @@ const Sitemap = () => {
 
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
+          <BreadcrumbNav items={[{ label: "Mapa do Site" }]} />
+          
           {/* Header */}
           <div className="text-center mb-12">
             <Map className="h-16 w-16 text-primary mx-auto mb-4" />

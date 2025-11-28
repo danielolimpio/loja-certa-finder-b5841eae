@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ArrowLeftRight, Check, X } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { platforms } from "@/data/platforms";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -38,6 +39,10 @@ const Compare = () => {
       </Helmet>
 
       <Header />
+      
+      <div className="container mt-6">
+        <BreadcrumbNav items={[{ label: "Comparar" }]} />
+      </div>
       
       {/* Hero Section */}
       <section className="container py-12 md:py-16">
