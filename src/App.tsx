@@ -16,11 +16,13 @@ import Transparency from "./pages/Transparency";
 import Sitemap from "./pages/Sitemap";
 import NotFound from "./pages/NotFound";
 import { usePageTracking } from "./hooks/usePageTracking";
+import { useScrollToTop } from "./hooks/useScrollToTop";
 
 const queryClient = new QueryClient();
 
 const AppContent = () => {
   usePageTracking();
+  useScrollToTop();
   
   return (
     <Routes>
