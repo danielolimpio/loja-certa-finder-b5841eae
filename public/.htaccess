@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Não redirecionar arquivos ou diretórios reais
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Proteger arquivos estáticos essenciais de redirecionamento
+  RewriteRule ^(ads\.txt|robots\.txt|sitemap\.xml|favicon\.ico|apple-touch-icon\.png|og-image\.(jpg|png)|\.well-known/|google.+\.html)$ - [L]
+
+  # Redirecionar todas as demais rotas para index.html (SPA)
+  RewriteRule ^ index.html [L]
+</IfModule>
