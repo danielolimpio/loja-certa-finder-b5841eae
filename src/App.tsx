@@ -13,17 +13,17 @@ import Privacy from "./pages/Privacy";
 import Cookies from "./pages/Cookies";
 import Terms from "./pages/Terms";
 import Transparency from "./pages/Transparency";
+import Sitemap from "./pages/Sitemap";
 import NotFound from "./pages/NotFound";
+import { usePageTracking } from "./hooks/usePageTracking";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
+const AppContent = () => {
+  usePageTracking();
+  
+  return (
+    <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/plataformas/:slug" element={<PlatformDetail />} />
           <Route path="/ranking" element={<Ranking />} />
@@ -34,9 +34,20 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/termos" element={<Terms />} />
           <Route path="/transparencia" element={<Transparency />} />
+          <Route path="/sitemap" element={<Sitemap />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+  );
+};
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <AppContent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
