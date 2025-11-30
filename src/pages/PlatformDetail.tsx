@@ -49,7 +49,13 @@ const PlatformDetail = () => {
         {/* Hero */}
         <div className="mb-12">
           <div className="flex items-start gap-6 mb-6">
-            <div className="text-6xl">{platform.logo}</div>
+            <div className="flex items-center justify-center w-24 h-24">
+              {typeof platform.logo === 'string' && (platform.logo.startsWith('/') || platform.logo.includes('data:image') || platform.logo.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i)) ? (
+                <img src={platform.logo} alt={`${platform.name} logo`} className="w-full h-full object-contain rounded-lg" />
+              ) : (
+                <span className="text-6xl">{platform.logo}</span>
+              )}
+            </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-3">
                 <h1 className="text-4xl font-bold">{platform.name}</h1>

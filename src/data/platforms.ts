@@ -1,3 +1,15 @@
+// Import logos
+import nuvemshopLogo from "@/assets/logos/Nuvemshop.jpeg";
+import shopifyLogo from "@/assets/logos/Shopify.jpeg";
+import mercadoLivreLogo from "@/assets/logos/Mercado_Livre.jpeg";
+import shopeeLogo from "@/assets/logos/Shopee.jpeg";
+import woocommerceLogo from "@/assets/logos/WooCommerce.jpeg";
+import trayLogo from "@/assets/logos/Tray.jpeg";
+import lojaIntegradaLogo from "@/assets/logos/Loja_Integrada.jpeg";
+import vtexLogo from "@/assets/logos/VTEX.jpeg";
+import bagyLogo from "@/assets/logos/Bagy.jpeg";
+import amazonLogo from "@/assets/logos/Amazon_Brasil.jpeg";
+
 export interface Platform {
   rank: number;
   name: string;
@@ -35,7 +47,7 @@ export const platforms: Platform[] = [
     rank: 1,
     name: "Nuvemshop",
     slug: "nuvemshop",
-    logo: "🛍️",
+    logo: nuvemshopLogo,
     isFree: true,
     isRecommended: true,
     rating: 4.8,
@@ -108,7 +120,7 @@ export const platforms: Platform[] = [
     rank: 2,
     name: "Shopify",
     slug: "shopify",
-    logo: "🛒",
+    logo: shopifyLogo,
     isFree: false,
     isRecommended: true,
     rating: 4.7,
@@ -182,7 +194,7 @@ export const platforms: Platform[] = [
     rank: 3,
     name: "Mercado Livre",
     slug: "mercado-livre",
-    logo: "🏪",
+    logo: mercadoLivreLogo,
     isFree: true,
     rating: 4.5,
     priceFrom: "R$ 0",
@@ -245,7 +257,7 @@ export const platforms: Platform[] = [
     rank: 4,
     name: "Shopee",
     slug: "shopee",
-    logo: "🧡",
+    logo: shopeeLogo,
     isFree: true,
     rating: 4.4,
     priceFrom: "R$ 0",
@@ -298,7 +310,7 @@ export const platforms: Platform[] = [
     rank: 5,
     name: "WooCommerce",
     slug: "woocommerce",
-    logo: "🔌",
+    logo: woocommerceLogo,
     isFree: true,
     rating: 4.3,
     priceFrom: "R$ 0",
@@ -349,7 +361,7 @@ export const platforms: Platform[] = [
     rank: 6,
     name: "Tray",
     slug: "tray",
-    logo: "📦",
+    logo: trayLogo,
     isFree: false,
     rating: 4.2,
     priceFrom: "R$ 59,90",
@@ -420,7 +432,7 @@ export const platforms: Platform[] = [
     rank: 7,
     name: "Loja Integrada",
     slug: "loja-integrada",
-    logo: "🏬",
+    logo: lojaIntegradaLogo,
     isFree: true,
     rating: 4.3,
     priceFrom: "R$ 0",
@@ -481,7 +493,7 @@ export const platforms: Platform[] = [
     rank: 8,
     name: "VTEX",
     slug: "vtex",
-    logo: "🚀",
+    logo: vtexLogo,
     isFree: false,
     rating: 4.6,
     priceFrom: "R$ 2.500",
@@ -534,7 +546,7 @@ export const platforms: Platform[] = [
     rank: 9,
     name: "Bagy",
     slug: "bagy",
-    logo: "🛍️",
+    logo: bagyLogo,
     isFree: true,
     rating: 4.1,
     priceFrom: "R$ 0",
@@ -586,7 +598,7 @@ export const platforms: Platform[] = [
     rank: 10,
     name: "Amazon Brasil",
     slug: "amazon-brasil",
-    logo: "📦",
+    logo: amazonLogo,
     isFree: true,
     rating: 4.4,
     priceFrom: "R$ 0",
