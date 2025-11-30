@@ -52,7 +52,13 @@ const PlatformCard = ({
             <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center text-3xl font-bold text-primary">
               #{rank}
             </div>
-            <div className="text-5xl">{logo}</div>
+            <div className="flex items-center justify-center w-20 h-20">
+              {typeof logo === 'string' && (logo.startsWith('/') || logo.includes('data:image') || logo.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i)) ? (
+                <img src={logo} alt={`${name} logo`} className="w-full h-full object-contain rounded-lg" />
+              ) : (
+                <span className="text-5xl">{logo}</span>
+              )}
+            </div>
           </div>
 
           {/* Middle Section - Name, Rating, Price */}
