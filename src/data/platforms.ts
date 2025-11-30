@@ -50,6 +50,30 @@ export interface Platform {
   customDomain: boolean;
   sslIncluded: boolean;
   supportChannels: string[];
+  // Novas informações detalhadas
+  fullDescription?: string;
+  yearFounded?: number;
+  marketYears?: number;
+  countries?: string[];
+  totalCustomers?: string;
+  globalTraffic?: string;
+  reclameAquiScore?: number;
+  reclameAquiLink?: string;
+  platformStyle?: string;
+  bestProductTypes?: string[];
+  recommendedMarketing?: string[];
+  technicalRequirements?: string[];
+  scalability?: string;
+  securityFeatures?: string[];
+  mobileApp?: boolean;
+  apiAvailable?: boolean;
+  multiCurrency?: boolean;
+  multiLanguage?: boolean;
+  avgTransactionFee?: string;
+  setupDifficulty?: {
+    score: number; // 1-10
+    description: string;
+  };
 }
 
 export const platforms: Platform[] = [
@@ -125,6 +149,29 @@ export const platforms: Platform[] = [
     customDomain: true,
     sslIncluded: true,
     supportChannels: ["Chat", "E-mail", "Central de Ajuda", "Tutoriais em vídeo"],
+    fullDescription: "A Nuvemshop é a maior plataforma de e-commerce da América Latina, fundada em 2011 na Argentina. Com mais de 100 mil lojas ativas, a plataforma revolucionou o mercado ao oferecer uma solução completa e acessível para empreendedores de todos os tamanhos. Sua interface intuitiva e foco no mercado latino-americano fazem dela a escolha ideal para quem está começando ou busca expandir suas vendas online.",
+    yearFounded: 2011,
+    marketYears: 13,
+    countries: ["Brasil", "Argentina", "México", "Colômbia", "Chile"],
+    totalCustomers: "100.000+",
+    globalTraffic: "5 milhões de visitantes/mês",
+    reclameAquiScore: 7.8,
+    reclameAquiLink: "https://www.reclameaqui.com.br/empresa/nuvemshop/",
+    platformStyle: "Interface moderna e clean, focada em usabilidade e conversão",
+    bestProductTypes: ["Moda e Acessórios", "Cosméticos", "Eletrônicos", "Livros", "Artesanato", "Alimentos"],
+    recommendedMarketing: ["Instagram Ads", "Facebook Ads", "Google Shopping", "E-mail Marketing", "Influenciadores", "WhatsApp Business"],
+    technicalRequirements: ["Navegador moderno", "Conexão com internet", "Conta bancária para recebimento"],
+    scalability: "Excelente - suporta desde pequenas lojas até operações com milhares de pedidos mensais",
+    securityFeatures: ["SSL Gratuito", "PCI Compliance", "Backup automático", "Proteção contra fraudes"],
+    mobileApp: true,
+    apiAvailable: true,
+    multiCurrency: false,
+    multiLanguage: true,
+    avgTransactionFee: "0% a 3,49% dependendo do plano",
+    setupDifficulty: {
+      score: 2,
+      description: "Muito fácil - Interface intuitiva permite configurar loja completa em 30 minutos"
+    },
   },
   {
     rank: 2,
@@ -199,6 +246,29 @@ export const platforms: Platform[] = [
     customDomain: true,
     sslIncluded: true,
     supportChannels: ["Chat 24/7", "E-mail", "Telefone", "Fórum da comunidade"],
+    fullDescription: "Shopify é a plataforma de e-commerce mais popular do mundo, fundada em 2006 no Canadá. Usada por mais de 2 milhões de comerciantes em 175 países, incluindo grandes marcas como Gymshark, Allbirds e Heinz. Oferece infraestrutura robusta, milhares de apps no ecossistema e recursos avançados para empresas que buscam crescimento global. É a escolha número 1 para quem pensa em escalar internacionalmente.",
+    yearFounded: 2006,
+    marketYears: 18,
+    countries: ["Global - 175+ países"],
+    totalCustomers: "2.000.000+",
+    globalTraffic: "100 milhões de visitantes/mês",
+    reclameAquiScore: 6.9,
+    reclameAquiLink: "https://www.reclameaqui.com.br/empresa/shopify/",
+    platformStyle: "Profissional e altamente personalizável com design moderno",
+    bestProductTypes: ["Fashion", "Eletrônicos", "Joias", "Home & Living", "Fitness", "Beauty", "Dropshipping"],
+    recommendedMarketing: ["Facebook Ads", "Google Ads", "TikTok Ads", "Pinterest Ads", "SEO", "E-mail Marketing", "Influencer Marketing"],
+    technicalRequirements: ["Navegador moderno", "Conta bancária internacional (recomendado)", "Conhecimento básico de inglês"],
+    scalability: "Excepcional - usado por pequenos empreendedores até grandes corporações com milhões em faturamento",
+    securityFeatures: ["SSL Incluído", "PCI Level 1 Certified", "Proteção DDoS", "Fraud Analysis", "2FA"],
+    mobileApp: true,
+    apiAvailable: true,
+    multiCurrency: true,
+    multiLanguage: true,
+    avgTransactionFee: "2.9% + $0.30 por transação (Shopify Payments)",
+    setupDifficulty: {
+      score: 3,
+      description: "Moderado - Requer familiarização com interface em inglês e configurações mais complexas"
+    },
   },
   {
     rank: 3,

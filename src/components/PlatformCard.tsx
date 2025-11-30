@@ -158,7 +158,7 @@ const PlatformCard = ({
           {/* Left Section - Rank and Logo */}
           <div className="flex items-center gap-6 md:min-w-[240px]">
             <div className="relative flex-shrink-0">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/10 via-primary/5 to-background flex items-center justify-center text-sm font-bold text-primary border border-primary/30 shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/25 group-hover:scale-110 group-hover:border-primary/50">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/10 via-primary/5 to-background flex items-center justify-center text-xl font-extrabold text-primary border border-primary/40 shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/25 group-hover:scale-110 group-hover:border-primary/60">
                 {getRankSuffix(rank)}
               </div>
               {rank <= 3 && (
@@ -167,7 +167,7 @@ const PlatformCard = ({
                 </div>
               )}
             </div>
-            <div className="flex items-center justify-center w-32 h-32 rounded-xl bg-gradient-to-br from-background to-muted/20 p-4 shadow-md border border-border/50 transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+            <div className="flex items-center justify-center w-40 h-40 rounded-xl bg-gradient-to-br from-background to-muted/20 p-5 shadow-md border border-border/50 transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
               {typeof logo === 'string' && (logo.startsWith('/') || logo.includes('data:image') || logo.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i)) ? (
                 <img src={logo} alt={`${name} logo`} className="w-full h-full object-contain" />
               ) : (
@@ -189,7 +189,7 @@ const PlatformCard = ({
                   style={{ 
                     backgroundColor: 'transparent',
                     borderColor: 'hsl(var(--badge-paid-border))',
-                    color: 'white'
+                    color: 'black'
                   }}
                   className="font-semibold px-3 py-1 rounded-full shadow-sm border-2"
                 >
