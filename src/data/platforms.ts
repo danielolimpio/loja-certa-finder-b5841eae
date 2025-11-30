@@ -9,6 +9,15 @@ import lojaIntegradaLogo from "@/assets/logos/Loja_Integrada.jpeg";
 import vtexLogo from "@/assets/logos/VTEX.jpeg";
 import bagyLogo from "@/assets/logos/Bagy.jpeg";
 import amazonLogo from "@/assets/logos/Amazon_Brasil.jpeg";
+import magazordLogo from "@/assets/logos/Magazord.jpeg";
+import elo7Logo from "@/assets/logos/Elo7.jpeg";
+import hotmartLogo from "@/assets/logos/Hotmart.jpeg";
+import eduzzLogo from "@/assets/logos/Eduzz.jpeg";
+import americanasLogo from "@/assets/logos/Americanas_Marketplace.jpeg";
+import enjoeiLogo from "@/assets/logos/Enjoei.jpeg";
+import magaluLogo from "@/assets/logos/Magalu_Marketplace.png";
+import kiwifyLogo from "@/assets/logos/Kiwify.jpeg";
+import yampiLogo from "@/assets/logos/Yampi.jpeg";
 
 export interface Platform {
   rank: number;
@@ -660,7 +669,7 @@ export const platforms: Platform[] = [
     rank: 11,
     name: "Magazord",
     slug: "magazord",
-    logo: "🏪",
+    logo: magazordLogo,
     isFree: false,
     rating: 4.0,
     priceFrom: "R$ 49,90",
@@ -721,7 +730,7 @@ export const platforms: Platform[] = [
     rank: 12,
     name: "Elo7",
     slug: "elo7",
-    logo: "🎨",
+    logo: elo7Logo,
     isFree: true,
     rating: 4.2,
     priceFrom: "R$ 0",
@@ -772,7 +781,7 @@ export const platforms: Platform[] = [
     rank: 13,
     name: "Hotmart",
     slug: "hotmart",
-    logo: "🎓",
+    logo: hotmartLogo,
     isFree: true,
     rating: 4.5,
     priceFrom: "R$ 0",
@@ -824,7 +833,7 @@ export const platforms: Platform[] = [
     rank: 14,
     name: "Eduzz",
     slug: "eduzz",
-    logo: "💎",
+    logo: eduzzLogo,
     isFree: true,
     rating: 4.3,
     priceFrom: "R$ 0",
@@ -875,7 +884,7 @@ export const platforms: Platform[] = [
     rank: 15,
     name: "Americanas Marketplace",
     slug: "americanas-marketplace",
-    logo: "🔴",
+    logo: americanasLogo,
     isFree: true,
     rating: 4.1,
     priceFrom: "R$ 0",
@@ -927,7 +936,7 @@ export const platforms: Platform[] = [
     rank: 16,
     name: "Enjoei",
     slug: "enjoei",
-    logo: "👕",
+    logo: enjoeiLogo,
     isFree: true,
     rating: 4.0,
     priceFrom: "R$ 0",
@@ -1030,7 +1039,7 @@ export const platforms: Platform[] = [
     rank: 18,
     name: "Magalu Marketplace",
     slug: "magalu-marketplace",
-    logo: "💙",
+    logo: magaluLogo,
     isFree: true,
     rating: 4.3,
     priceFrom: "R$ 0",
@@ -1081,7 +1090,7 @@ export const platforms: Platform[] = [
     rank: 19,
     name: "Kiwify",
     slug: "kiwify",
-    logo: "🥝",
+    logo: kiwifyLogo,
     isFree: true,
     rating: 4.2,
     priceFrom: "R$ 0",
@@ -1132,7 +1141,7 @@ export const platforms: Platform[] = [
     rank: 20,
     name: "Yampi",
     slug: "yampi",
-    logo: "⚡",
+    logo: yampiLogo,
     isFree: false,
     rating: 4.4,
     priceFrom: "R$ 29,90",
