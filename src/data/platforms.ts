@@ -15,6 +15,7 @@ import hotmartLogo from "@/assets/logos/Hotmart.jpeg";
 import eduzzLogo from "@/assets/logos/Eduzz.jpeg";
 import americanasLogo from "@/assets/logos/Americanas_Marketplace.jpeg";
 import enjoeiLogo from "@/assets/logos/Enjoei.jpeg";
+import olxLogo from "@/assets/logos/OLX.jpeg";
 import magaluLogo from "@/assets/logos/Magalu_Marketplace.png";
 import kiwifyLogo from "@/assets/logos/Kiwify.jpeg";
 import yampiLogo from "@/assets/logos/Yampi.jpeg";
@@ -987,7 +988,7 @@ export const platforms: Platform[] = [
     rank: 17,
     name: "OLX",
     slug: "olx",
-    logo: "💼",
+    logo: olxLogo,
     isFree: true,
     rating: 3.9,
     priceFrom: "R$ 0",
