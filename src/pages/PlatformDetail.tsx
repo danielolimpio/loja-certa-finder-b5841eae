@@ -48,24 +48,26 @@ const PlatformDetail = () => {
 
         {/* Hero */}
         <div className="mb-12">
-          <div className="flex items-start gap-6 mb-6">
-            <div className="flex items-center justify-center w-24 h-24">
+          <div className="flex items-start gap-8 mb-8">
+            <div className="flex items-center justify-center w-28 h-28 rounded-2xl bg-gradient-to-br from-background to-muted/20 p-4 shadow-lg border-2 border-border/50 transition-all duration-300 hover:shadow-xl hover:scale-105">
               {typeof platform.logo === 'string' && (platform.logo.startsWith('/') || platform.logo.includes('data:image') || platform.logo.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i)) ? (
-                <img src={platform.logo} alt={`${platform.name} logo`} className="w-full h-full object-contain rounded-lg" />
+                <img src={platform.logo} alt={`${platform.name} logo`} className="w-full h-full object-contain" />
               ) : (
                 <span className="text-6xl">{platform.logo}</span>
               )}
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-3">
-                <h1 className="text-4xl font-bold">{platform.name}</h1>
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">{platform.name}</h1>
                 {platform.isFree ? (
-                  <Badge className="bg-accent hover:bg-accent/90 text-lg px-3 py-1">Grátis</Badge>
+                  <Badge className="bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent/70 text-accent-foreground font-semibold text-lg px-4 py-1.5 rounded-full shadow-sm">Grátis</Badge>
                 ) : (
-                  <Badge variant="secondary" className="text-lg px-3 py-1">Pago</Badge>
+                  <Badge variant="secondary" className="bg-gradient-to-r from-secondary to-secondary/80 font-semibold text-lg px-4 py-1.5 rounded-full shadow-sm">Pago</Badge>
                 )}
                 {platform.isRecommended && (
-                  <Badge className="bg-primary text-lg px-3 py-1">Recomendado</Badge>
+                  <Badge className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-bold text-lg px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                    ⭐ Recomendado
+                  </Badge>
                 )}
               </div>
               
@@ -73,20 +75,20 @@ const PlatformDetail = () => {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className={`h-5 w-5 ${
+                    className={`h-5 w-5 transition-all ${
                       i < Math.floor(platform.rating)
                         ? "fill-yellow-400 text-yellow-400"
-                        : "text-gray-300"
+                        : "text-muted-foreground/30"
                     }`}
                   />
                 ))}
-                <span className="text-lg font-semibold ml-2">{platform.rating.toFixed(1)}</span>
-                <span className="text-muted-foreground">de 5.0</span>
+                <span className="text-lg font-bold ml-2">{platform.rating.toFixed(1)}</span>
+                <span className="text-sm text-muted-foreground">de 5.0</span>
               </div>
 
-              <p className="text-xl text-muted-foreground mb-6">{platform.description}</p>
+              <p className="text-xl text-muted-foreground mb-6 leading-relaxed">{platform.description}</p>
 
-              <Button size="lg" className="gap-2">
+              <Button size="lg" className="gap-2 bg-gradient-to-r from-primary via-primary to-primary/90 hover:from-primary/90 hover:via-primary/80 hover:to-primary/70 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-semibold">
                 Começar na {platform.name}
               </Button>
             </div>
@@ -126,10 +128,10 @@ const PlatformDetail = () => {
                   {platform.plans.map((plan, index) => (
                     <div
                       key={index}
-                      className="border rounded-lg p-6 hover:border-primary transition-colors"
+                      className="border-2 border-border/50 rounded-xl p-6 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:scale-105 bg-gradient-to-br from-card to-card/95"
                     >
                       <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-                      <p className="text-3xl font-bold text-primary mb-4">{plan.price}</p>
+                      <p className="text-3xl font-bold bg-gradient-to-br from-primary to-primary/70 bg-clip-text text-transparent mb-4">{plan.price}</p>
                       <ul className="space-y-2">
                         {plan.features.map((feature, idx) => (
                           <li key={idx} className="flex items-start gap-2 text-sm">
@@ -328,7 +330,7 @@ const PlatformDetail = () => {
                   </p>
                 </div>
 
-                <Button className="w-full mb-4" size="lg">
+                <Button className="w-full mb-4 bg-gradient-to-r from-primary via-primary to-primary/90 hover:from-primary/90 hover:via-primary/80 hover:to-primary/70 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-semibold" size="lg">
                   Começar agora
                 </Button>
 
