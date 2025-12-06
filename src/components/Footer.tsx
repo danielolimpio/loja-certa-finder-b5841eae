@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Store } from "lucide-react";
+import logo from "@/assets/logo-lojas-gratis.png";
 
 const Footer = () => {
   return (
@@ -8,9 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="flex items-center gap-2 font-bold text-xl mb-4">
-              <Store className="h-6 w-6 text-primary" />
-              <span>Lojas<span className="text-primary">Grátis</span></span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logo} alt="Lojas Grátis" className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-md">
               O guia completo para escolher a melhor plataforma de e-commerce no Brasil. 
