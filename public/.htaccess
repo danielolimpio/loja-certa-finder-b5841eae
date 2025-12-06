@@ -1,6 +1,25 @@
+# Forçar Content-Type correto para ads.txt
+<IfModule mod_mime.c>
+  <Files "ads.txt">
+    ForceType text/plain
+    Header set Content-Type "text/plain; charset=utf-8"
+  </Files>
+</IfModule>
+
+# Garantir headers corretos
+<IfModule mod_headers.c>
+  <FilesMatch "ads\.txt$">
+    Header set Content-Type "text/plain; charset=utf-8"
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Servir ads.txt diretamente sem redirecionamento
+  RewriteRule ^ads\.txt$ - [L,T=text/plain]
 
   # Não redirecionar arquivos ou diretórios reais
   RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -8,7 +27,7 @@
   RewriteRule ^ - [L]
 
   # Proteger arquivos estáticos essenciais de redirecionamento
-  RewriteRule ^(ads\.txt|robots\.txt|sitemap\.xml|favicon\.ico|apple-touch-icon\.png|og-image\.(jpg|png)|\.well-known/|google.+\.html)$ - [L]
+  RewriteRule ^(robots\.txt|sitemap\.xml|favicon\.ico|apple-touch-icon\.png|og-image\.(jpg|png)|\.well-known/|google.+\.html)$ - [L]
 
   # Redirecionar todas as demais rotas para index.html (SPA)
   RewriteRule ^ index.html [L]
