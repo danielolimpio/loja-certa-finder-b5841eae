@@ -53,6 +53,7 @@ const Compare = () => {
           name="description" 
           content="Compare lado a lado as melhores plataformas de e-commerce do Brasil. Analise recursos, preços e escolha a ideal para seu negócio." 
         />
+        <link rel="canonical" href="https://lojasgratis.com.br/comparar" />
         <meta name="keywords" content="comparar ecommerce, comparação plataformas, melhor plataforma ecommerce" />
       </Helmet>
 

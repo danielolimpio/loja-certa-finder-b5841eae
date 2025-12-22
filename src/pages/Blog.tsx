@@ -27,7 +27,7 @@ const Blog = () => {
         <title>Blog | Lojas Grátis - Dicas e Estratégias para E-commerce</title>
         <meta name="description" content="Aprenda tudo sobre e-commerce, marketing digital e empreendedorismo. Dicas práticas para montar e crescer sua loja virtual no Brasil." />
         <meta name="keywords" content="blog e-commerce, dicas loja virtual, marketing digital, empreendedorismo online" />
-        <link rel="canonical" href="https://lojasgratis.com/blog" />
+        <link rel="canonical" href="https://lojasgratis.com.br/blog" />
       </Helmet>
 
       <Header />

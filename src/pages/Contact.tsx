@@ -14,6 +14,7 @@ const Contact = () => {
       <Helmet>
         <title>Contato - LojasGrátis | Entre em Contato Conosco</title>
         <meta name="description" content="Entre em contato com a equipe LojasGrátis. Envie suas dúvidas, sugestões ou feedback sobre plataformas de e-commerce." />
+        <link rel="canonical" href="https://lojasgratis.com.br/contato" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">
