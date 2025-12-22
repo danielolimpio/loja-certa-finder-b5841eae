@@ -8,8 +8,9 @@ const Transparency = () => {
   return (
     <>
       <Helmet>
-        <title>Política de Transparência - LojasGrátis</title>
-        <meta name="description" content="Conheça nossa metodologia de análise, critérios de ranking e como o LojasGrátis mantém a transparência em suas avaliações." />
+        <title>Política de Transparência - Lojas Grátis</title>
+        <meta name="description" content="Conheça nossa metodologia de análise, critérios de ranking e como mantemos a transparência." />
+        <link rel="canonical" href="https://lojasgratis.com.br/transparencia" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

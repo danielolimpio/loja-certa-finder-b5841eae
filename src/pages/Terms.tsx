@@ -192,7 +192,8 @@ const Terms = () => {
     <>
       <Helmet>
         <title>Termos de Uso - Lojas Grátis</title>
-        <meta name="description" content="Termos de Uso da Lojas Grátis. Conheça as regras, condições e direitos para utilizar nosso site de informações sobre e-commerce e lojas virtuais." />
+        <meta name="description" content="Termos de Uso da Lojas Grátis. Conheça as regras e condições para utilizar nosso site." />
+        <link rel="canonical" href="https://lojasgratis.com.br/termos" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-secondary/20">
