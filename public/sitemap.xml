@@ -2,109 +2,188 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lojasgratis.com.br/</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/ranking</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/comparar</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://lojasgratis.com.br/blog</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://lojasgratis.com.br/sobre</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/contato</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/privacidade</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/cookies</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/termos</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/transparencia</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/sitemap</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <!-- Plataformas de E-commerce -->
   <url>
     <loc>https://lojasgratis.com.br/plataformas/nuvemshop</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/plataformas/shopify</loc>
-    <lastmod>2025-11-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojasgratis.com.br/plataformas/shopee</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/plataformas/mercado-livre</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/shopee</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/woocommerce</loc>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lojasgratis.com.br/plataformas/tray</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lojasgratis.com.br/plataformas/wix</loc>
-    <lastmod>2025-11-27</lastmod>
+    <loc>https://lojasgratis.com.br/plataformas/loja-integrada</loc>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lojasgratis.com.br/plataformas/dooca</loc>
-    <lastmod>2025-11-27</lastmod>
+    <loc>https://lojasgratis.com.br/plataformas/vtex</loc>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lojasgratis.com.br/plataformas/magalu</loc>
-    <lastmod>2025-11-27</lastmod>
+    <loc>https://lojasgratis.com.br/plataformas/bagy</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/amazon-brasil</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/magazord</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/elo7</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/hotmart</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/eduzz</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/americanas-marketplace</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/enjoei</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/olx</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/magalu-marketplace</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/kiwify</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/plataformas/yampi</loc>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
