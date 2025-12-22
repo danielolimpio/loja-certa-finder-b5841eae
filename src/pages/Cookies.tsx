@@ -222,7 +222,8 @@ const Cookies = () => {
     <>
       <Helmet>
         <title>Política de Cookies - Lojas Grátis</title>
-        <meta name="description" content="Política de Cookies da Lojas Grátis. Saiba como utilizamos cookies e tecnologias de rastreamento, e como você pode controlá-los." />
+        <meta name="description" content="Política de Cookies da Lojas Grátis. Saiba como utilizamos cookies e como controlá-los." />
+        <link rel="canonical" href="https://lojasgratis.com.br/cookies" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-secondary/20">

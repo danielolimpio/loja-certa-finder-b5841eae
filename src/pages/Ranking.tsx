@@ -10,11 +10,12 @@ const Ranking = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Helmet>
-        <title>Ranking Completo das Plataformas de E-commerce 2024 | LojasGrátis</title>
+        <title>Ranking das Melhores Plataformas de E-commerce 2024</title>
         <meta 
           name="description" 
-          content="Ranking completo e atualizado das 20 melhores plataformas de e-commerce do Brasil. Compare custos, recursos e escolha a melhor opção para sua loja virtual." 
+          content="Ranking atualizado das 20 melhores plataformas de e-commerce do Brasil. Compare custos, recursos e escolha a melhor opção." 
         />
+        <link rel="canonical" href="https://lojasgratis.com.br/ranking" />
         <meta name="keywords" content="ranking ecommerce, melhores plataformas, loja virtual, comparação plataformas" />
       </Helmet>
 
