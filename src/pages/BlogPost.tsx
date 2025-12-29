@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, Share2, BookmarkPlus, User, Tag } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

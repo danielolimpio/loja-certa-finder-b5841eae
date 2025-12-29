@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Trophy, TrendingUp, Award } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,12 +10,12 @@ const Ranking = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Helmet>
-        <title>Ranking das Melhores Plataformas de E-commerce 2024</title>
+        <title>Ranking das Melhores Plataformas de E-commerce 2025</title>
         <meta 
           name="description" 
           content="Ranking atualizado das 20 melhores plataformas de e-commerce do Brasil. Compare custos, recursos e escolha a melhor opção." 
         />
-        <link rel="canonical" href="https://lojasgratis.com.br/ranking" />
+        <link rel="canonical" href="https://lojasgratis.com.br/ranking/" />
         <meta name="keywords" content="ranking ecommerce, melhores plataformas, loja virtual, comparação plataformas" />
       </Helmet>
 

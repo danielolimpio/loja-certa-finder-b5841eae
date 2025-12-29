@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import { ArrowLeftRight, Check, X, Star, ExternalLink, Plus, Trash2 } from "lucide-react";
 import Header from "@/components/Header";
