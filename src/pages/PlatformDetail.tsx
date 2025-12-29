@@ -31,6 +31,70 @@ const PlatformDetail = () => {
 
   const complexityLabel = ["", "Muito Fácil", "Fácil", "Moderado", "Difícil", "Muito Difícil"];
 
+  // JSON-LD Structured Data for rich snippets
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": platform.name,
+    "description": platform.description,
+    "brand": {
+      "@type": "Brand",
+      "name": platform.name
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": platform.rating.toFixed(1),
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "1"
+    },
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Organization",
+        "name": "Lojas Grátis"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": platform.rating.toFixed(1),
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": platform.fullDescription || platform.description
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": platform.isFree ? "0" : platform.priceFrom.replace(/[^\d,]/g, '').replace(',', '.') || "0",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://lojasgratis.com.br/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ranking",
+        "item": "https://lojasgratis.com.br/ranking/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": platform.name,
+        "item": `https://lojasgratis.com.br/plataformas/${platform.slug}/`
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -44,6 +108,12 @@ const PlatformDetail = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${platform.name} - Análise Completa`} />
         <meta name="twitter:description" content={platform.description} />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbJsonLd)}
+        </script>
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />

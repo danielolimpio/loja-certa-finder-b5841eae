@@ -26,6 +26,26 @@ const seoMetadata: Record<string, { title: string; description: string }> = {
     title: 'Blog | Lojas Grátis - Dicas e Estratégias para E-commerce',
     description: 'Aprenda tudo sobre e-commerce, marketing digital e empreendedorismo. Dicas práticas para montar e crescer sua loja virtual no Brasil.'
   },
+  '/blog/categoria/plataformas/': {
+    title: 'Artigos sobre Plataformas de E-commerce – Lojas Grátis',
+    description: 'Leia análises, comparações e tutoriais sobre as principais plataformas de e-commerce: Nuvemshop, Shopify, VTEX, WooCommerce e mais.'
+  },
+  '/blog/categoria/marketing-digital/': {
+    title: 'Marketing Digital para Lojas Online – Lojas Grátis',
+    description: 'Estratégias de marketing digital para e-commerce: tráfego pago, SEO, redes sociais e conversão. Dicas práticas e atualizadas.'
+  },
+  '/blog/categoria/e-commerce/': {
+    title: 'Guias e Tendências de E-commerce – Lojas Grátis',
+    description: 'Tudo sobre e-commerce no Brasil: tendências, tecnologia, logística, pagamentos e crescimento de vendas online.'
+  },
+  '/blog/categoria/empreendedorismo/': {
+    title: 'Empreendedorismo Digital e Lojas Virtuais – Lojas Grátis',
+    description: 'Dicas e estratégias para empreendedores que querem iniciar ou escalar sua loja virtual. Histórias de sucesso e insights práticos.'
+  },
+  '/blog/categoria/tutoriais/': {
+    title: 'Tutoriais e Guias Passo a Passo – Lojas Grátis',
+    description: 'Tutoriais completos para configurar, otimizar e gerenciar sua loja virtual. Aprenda do básico ao avançado.'
+  },
   '/contato/': {
     title: 'Contato - LojasGrátis | Entre em Contato Conosco',
     description: 'Entre em contato com a equipe LojasGrátis. Envie suas dúvidas, sugestões ou feedback sobre plataformas de e-commerce.'
