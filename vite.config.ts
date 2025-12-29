@@ -4,40 +4,40 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import prerender from '@prerenderer/rollup-plugin';
 
-// All routes that need to be prerendered for SEO
+// All routes that need to be prerendered for SEO (with trailing slashes)
 const prerenderRoutes = [
   '/',
-  '/sobre',
-  '/ranking',
-  '/comparar',
-  '/blog',
-  '/contato',
-  '/privacidade',
-  '/cookies',
-  '/termos',
-  '/transparencia',
-  '/sitemap',
+  '/sobre/',
+  '/ranking/',
+  '/comparar/',
+  '/blog/',
+  '/contato/',
+  '/privacidade/',
+  '/cookies/',
+  '/termos/',
+  '/transparencia/',
+  '/sitemap/',
   // Platform pages
-  '/plataformas/nuvemshop',
-  '/plataformas/shopify',
-  '/plataformas/mercado-livre',
-  '/plataformas/shopee',
-  '/plataformas/woocommerce',
-  '/plataformas/tray',
-  '/plataformas/loja-integrada',
-  '/plataformas/vtex',
-  '/plataformas/bagy',
-  '/plataformas/amazon-brasil',
-  '/plataformas/magazord',
-  '/plataformas/elo7',
-  '/plataformas/hotmart',
-  '/plataformas/eduzz',
-  '/plataformas/americanas-marketplace',
-  '/plataformas/enjoei',
-  '/plataformas/olx',
-  '/plataformas/magalu-marketplace',
-  '/plataformas/kiwify',
-  '/plataformas/yampi',
+  '/plataformas/nuvemshop/',
+  '/plataformas/shopify/',
+  '/plataformas/mercado-livre/',
+  '/plataformas/shopee/',
+  '/plataformas/woocommerce/',
+  '/plataformas/tray/',
+  '/plataformas/loja-integrada/',
+  '/plataformas/vtex/',
+  '/plataformas/bagy/',
+  '/plataformas/amazon-brasil/',
+  '/plataformas/magazord/',
+  '/plataformas/elo7/',
+  '/plataformas/hotmart/',
+  '/plataformas/eduzz/',
+  '/plataformas/americanas-marketplace/',
+  '/plataformas/enjoei/',
+  '/plataformas/olx/',
+  '/plataformas/magalu-marketplace/',
+  '/plataformas/kiwify/',
+  '/plataformas/yampi/',
 ];
 
 // https://vitejs.dev/config/
@@ -58,9 +58,10 @@ export default defineConfig(({ mode }) => ({
         renderAfterTime: 5000,
       },
       postProcess(renderedRoute) {
-        // Inject proper canonical URL for each route
+        // Inject proper canonical URL for each route (always with trailing slash)
         const baseUrl = 'https://lojasgratis.com.br';
-        const canonicalUrl = `${baseUrl}${renderedRoute.route === '/' ? '' : renderedRoute.route}`;
+        const routePath = renderedRoute.route === '/' ? '/' : renderedRoute.route.endsWith('/') ? renderedRoute.route : `${renderedRoute.route}/`;
+        const canonicalUrl = `${baseUrl}${routePath}`;
         
         // Replace canonical tag if exists, or add one
         if (renderedRoute.html.includes('rel="canonical"')) {
