@@ -78,43 +78,43 @@ const Sitemap = () => {
               </h2>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/plataformas/nuvemshop" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                  <Link to="/plataformas/nuvemshop/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                     → Nuvemshop
                   </Link>
                 </li>
                 <li>
-                  <Link to="/plataformas/shopify" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                  <Link to="/plataformas/shopify/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                     → Shopify
                   </Link>
                 </li>
                 <li>
-                  <Link to="/plataformas/shopee" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                  <Link to="/plataformas/shopee/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                     → Shopee
                   </Link>
                 </li>
                 <li>
-                  <Link to="/plataformas/mercado-livre" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                  <Link to="/plataformas/mercado-livre/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                     → Mercado Livre
                   </Link>
                 </li>
                 <li>
-                  <Link to="/plataformas/tray" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                  <Link to="/plataformas/tray/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                     → Tray
                   </Link>
                 </li>
                 <li>
-                  <Link to="/plataformas/wix" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                    → Wix
+                  <Link to="/plataformas/woocommerce/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                    → WooCommerce
                   </Link>
                 </li>
                 <li>
-                  <Link to="/plataformas/dooca" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                    → Dooca
+                  <Link to="/plataformas/magalu-marketplace/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                    → Magalu Marketplace
                   </Link>
                 </li>
                 <li>
-                  <Link to="/plataformas/magalu" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                    → Magazine Luiza
+                  <Link to="/plataformas/hotmart/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                    → Hotmart
                   </Link>
                 </li>
               </ul>
