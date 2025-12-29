@@ -11,7 +11,7 @@ const Sitemap = () => {
       <Helmet>
         <title>Mapa do Site - Lojas Grátis</title>
         <meta name="description" content="Navegue por todas as seções do Lojas Grátis. Encontre análises e guias sobre e-commerce." />
-        <link rel="canonical" href="https://lojasgratis.com.br/sitemap" />
+        <link rel="canonical" href="https://lojasgratis.com.br/sitemap/" />
       </Helmet>
 
       <Header />

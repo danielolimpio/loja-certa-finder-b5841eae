@@ -34,13 +34,16 @@ const PlatformDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{platform.name} - Análise Completa | LojasGrátis - Ranking de Plataformas</title>
+        <title>{platform.name} - Análise Completa | Lojas Grátis</title>
         <meta name="description" content={`${platform.description} Confira preços, recursos, prós e contras da ${platform.name}. Avaliação ${platform.rating}/5.`} />
         <link rel="canonical" href={`https://lojasgratis.com.br/plataformas/${platform.slug}/`} />
-        <meta property="og:title" content={`${platform.name} - Análise Completa | LojasGrátis`} />
+        <meta property="og:title" content={`${platform.name} - Análise Completa | Lojas Grátis`} />
         <meta property="og:description" content={platform.description} />
-        <meta property="og:url" content={`https://lojasgratis.com.br/plataformas/${platform.slug}`} />
+        <meta property="og:url" content={`https://lojasgratis.com.br/plataformas/${platform.slug}/`} />
         <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${platform.name} - Análise Completa`} />
+        <meta name="twitter:description" content={platform.description} />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />

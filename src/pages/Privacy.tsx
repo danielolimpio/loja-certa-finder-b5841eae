@@ -95,7 +95,7 @@ const Privacy = () => {
       <Helmet>
         <title>Política de Privacidade - Lojas Grátis</title>
         <meta name="description" content="Política de Privacidade da Lojas Grátis. Saiba como coletamos e protegemos seus dados." />
-        <link rel="canonical" href="https://lojasgratis.com.br/privacidade" />
+        <link rel="canonical" href="https://lojasgratis.com.br/privacidade/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-secondary/20">
