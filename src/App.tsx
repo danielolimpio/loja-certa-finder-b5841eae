@@ -17,6 +17,7 @@ import Transparency from "./pages/Transparency";
 import Sitemap from "./pages/Sitemap";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import BlogCategory from "./pages/BlogCategory";
 import NotFound from "./pages/NotFound";
 import { usePageTracking } from "./hooks/usePageTracking";
 import { useScrollToTop } from "./hooks/useScrollToTop";
@@ -41,6 +42,7 @@ const AppContent = () => {
           <Route path="/transparencia" element={<Transparency />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/categoria/:slug" element={<BlogCategory />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
