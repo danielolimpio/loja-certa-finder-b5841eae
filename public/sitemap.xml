@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Páginas Principais -->
   <url>
     <loc>https://lojasgratis.com.br/</loc>
     <lastmod>2025-12-29</lastmod>
@@ -37,6 +38,14 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lojasgratis.com.br/sitemap/</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Páginas Legais -->
+  <url>
     <loc>https://lojasgratis.com.br/privacidade/</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
@@ -60,13 +69,40 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+
+  <!-- Categorias do Blog -->
   <url>
-    <loc>https://lojasgratis.com.br/sitemap/</loc>
+    <loc>https://lojasgratis.com.br/blog/categoria/e-commerce/</loc>
     <lastmod>2025-12-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
-  <!-- Plataformas de E-commerce -->
+  <url>
+    <loc>https://lojasgratis.com.br/blog/categoria/plataformas/</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/blog/categoria/marketing-digital/</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/blog/categoria/empreendedorismo/</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lojasgratis.com.br/blog/categoria/tutoriais/</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Plataformas de E-commerce (20 plataformas) -->
   <url>
     <loc>https://lojasgratis.com.br/plataformas/nuvemshop/</loc>
     <lastmod>2025-12-29</lastmod>
