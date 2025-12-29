@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
@@ -10,7 +10,7 @@ const About = () => {
       <Helmet>
         <title>Sobre Nós - LojasGrátis | Ranking de Plataformas de E-commerce</title>
         <meta name="description" content="Conheça a LojasGrátis, o guia definitivo para comparar e escolher a melhor plataforma de e-commerce no Brasil. Análises imparciais e detalhadas." />
-        <link rel="canonical" href="https://lojasgratis.com.br/sobre" />
+        <link rel="canonical" href="https://lojasgratis.com.br/sobre/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

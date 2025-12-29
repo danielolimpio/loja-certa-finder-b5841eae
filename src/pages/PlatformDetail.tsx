@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, CheckCircle2, XCircle, Star, Clock, Shield, CreditCard, Zap, Globe, Users, TrendingUp, Package, Award, Smartphone, Code, DollarSign, BarChart3, AlertCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -36,7 +36,7 @@ const PlatformDetail = () => {
       <Helmet>
         <title>{platform.name} - Análise Completa | LojasGrátis - Ranking de Plataformas</title>
         <meta name="description" content={`${platform.description} Confira preços, recursos, prós e contras da ${platform.name}. Avaliação ${platform.rating}/5.`} />
-        <link rel="canonical" href={`https://lojasgratis.com.br/plataformas/${platform.slug}`} />
+        <link rel="canonical" href={`https://lojasgratis.com.br/plataformas/${platform.slug}/`} />
         <meta property="og:title" content={`${platform.name} - Análise Completa | LojasGrátis`} />
         <meta property="og:description" content={platform.description} />
         <meta property="og:url" content={`https://lojasgratis.com.br/plataformas/${platform.slug}`} />

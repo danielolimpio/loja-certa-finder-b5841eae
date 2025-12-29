@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { ArrowDown, CheckCircle2, Trophy, Search } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,7 +8,21 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+    <>
+      <Helmet>
+        <title>Lojas Grátis - Ranking das Melhores Plataformas de E-commerce 2025</title>
+        <meta name="description" content="Compare as melhores plataformas para criar sua loja virtual no Brasil. Análise completa de Nuvemshop, Shopify, Shopee, Mercado Livre e mais de 20 opções." />
+        <link rel="canonical" href="https://lojasgratis.com.br/" />
+        <meta name="keywords" content="loja virtual grátis, plataforma e-commerce, criar loja online, nuvemshop, shopify brasil" />
+        <meta property="og:title" content="Lojas Grátis - Ranking das Melhores Plataformas de E-commerce" />
+        <meta property="og:description" content="Compare e escolha a melhor plataforma para sua loja virtual no Brasil. Análise completa com custos, recursos e facilidade de uso." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lojasgratis.com.br/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lojas Grátis - Ranking de Plataformas E-commerce Brasil" />
+        <meta name="twitter:description" content="Compare plataformas gratuitas e pagas para criar sua loja online." />
+      </Helmet>
+      <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Header />
       
       {/* Hero Section */}
@@ -121,7 +136,8 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   );
 };
 
