@@ -223,4 +223,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Artigos do Blog -->
+  <url>
+    <loc>https://lojasgratis.com.br/artigo/melhores-plataformas-e-commerce-gratuitas-2026/</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -151,6 +151,11 @@ const seoMetadata: Record<string, { title: string; description: string }> = {
     title: 'Yampi - Análise Completa 2025 | Lojas Grátis',
     description: 'Plataforma focada em conversão e otimização de vendas com recursos avançados. Confira preços e recursos.'
   },
+  // Articles
+  '/artigo/melhores-plataformas-e-commerce-gratuitas-2026/': {
+    title: 'Melhores Plataformas de E-commerce Gratuitas em 2026: Guia Completo | Lojas Grátis',
+    description: 'Descubra as melhores plataformas de e-commerce gratuitas para 2026. Compare custos, recursos e facilidade de uso. Ideal para quem quer começar sem investir!'
+  },
 };
 
 // All routes that need to be prerendered for SEO (with trailing slashes)

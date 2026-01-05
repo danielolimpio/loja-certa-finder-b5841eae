@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
-import { Map, Home, BarChart3, GitCompare, Info, Mail, Shield, Cookie, FileText, Eye, BookOpen, Tag } from "lucide-react";
+import { Map, Home, BarChart3, GitCompare, Info, Mail, Shield, Cookie, FileText, Eye, BookOpen, Tag, Newspaper } from "lucide-react";
 
 const Sitemap = () => {
   // Todas as plataformas do site
@@ -37,6 +37,14 @@ const Sitemap = () => {
     { name: "Marketing Digital", slug: "marketing-digital" },
     { name: "Empreendedorismo", slug: "empreendedorismo" },
     { name: "Tutoriais", slug: "tutoriais" },
+  ];
+
+  // Artigos publicados
+  const articles = [
+    { 
+      title: "Melhores Plataformas de E-commerce Gratuitas em 2026: Guia Completo", 
+      slug: "melhores-plataformas-e-commerce-gratuitas-2026" 
+    },
   ];
 
   return (
@@ -123,6 +131,26 @@ const Sitemap = () => {
                       className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                     >
                       → {category.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Artigos */}
+            <div className="bg-card border rounded-lg p-6 mb-8">
+              <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                <Newspaper className="h-5 w-5 text-primary" />
+                Artigos Publicados ({articles.length})
+              </h2>
+              <ul className="space-y-3">
+                {articles.map((article) => (
+                  <li key={article.slug}>
+                    <Link 
+                      to={`/artigo/${article.slug}/`} 
+                      className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+                    >
+                      → {article.title}
                     </Link>
                   </li>
                 ))}
