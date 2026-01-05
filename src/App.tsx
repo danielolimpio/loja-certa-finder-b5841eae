@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import PlatformDetail from "./pages/PlatformDetail";
+import MelhoresPlataformasEcommerceGratuitas2026 from "./pages/articles/MelhoresPlataformasEcommerceGratuitas2026";
 import Ranking from "./pages/Ranking";
 import Compare from "./pages/Compare";
 import About from "./pages/About";
@@ -44,6 +45,7 @@ const AppContent = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/categoria/:slug" element={<BlogCategory />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/artigo/melhores-plataformas-e-commerce-gratuitas-2026" element={<MelhoresPlataformasEcommerceGratuitas2026 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
