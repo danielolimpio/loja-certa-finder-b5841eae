@@ -263,43 +263,59 @@ const MelhoresPlataformasEcommerceGratuitas2026 = () => {
                 </div>
               </div>
 
-              <h2>Por que uma plataforma realmente gratuita muda tudo em 2026?</h2>
+              <Separator className="my-12" />
 
-              <p>
+              <h2 className="!mt-12 !mb-6">Por que uma plataforma realmente gratuita muda tudo em 2026?</h2>
+
+              <p className="!mb-6">
                 Antes de mergulharmos nas opções, é essencial entender por que 2026 é um marco histórico para quem quer vender online sem investimento inicial.
               </p>
 
-              <p>Dois fatores convergiram:</p>
+              <p className="!mb-8 font-semibold">Dois fatores convergiram:</p>
 
-              <p>
-                <strong>A maturidade do mercado:</strong> Plataformas brasileiras (e internacionais com operação local) já dominam a curva de adoção. Com milhões de usuários ativos, elas conseguem bancar planos gratuitos sustentáveis — via upsell de recursos premium ou parcerias com meios de pagamento.
+              <h3 className="!mt-8 !mb-4">1. A maturidade do mercado</h3>
+              <p className="!mb-6">
+                Plataformas brasileiras (e internacionais com operação local) já dominam a curva de adoção. Com milhões de usuários ativos, elas conseguem bancar planos gratuitos sustentáveis — via upsell de recursos premium ou parcerias com meios de pagamento.
               </p>
 
-              <p>
-                <strong>A pressão competitiva:</strong> A entrada de players como Shopee, AliExpress e até o WhatsApp Commerce forçou todas as plataformas a repensarem sua estratégia de captação. O "teste grátis de 14 dias" ficou obsoleto. Agora, o foco é retenção por valor percebido — ou seja: você usa, vende, cresce… e só paga quando sentir que precisa.
+              <h3 className="!mt-8 !mb-4">2. A pressão competitiva</h3>
+              <p className="!mb-6">
+                A entrada de players como Shopee, AliExpress e até o WhatsApp Commerce forçou todas as plataformas a repensarem sua estratégia de captação. O "teste grátis de 14 dias" ficou obsoleto. Agora, o foco é retenção por valor percebido — ou seja: você usa, vende, cresce… e só paga quando sentir que precisa.
               </p>
 
-              <p>
-                Segundo dados do E-bit Nielsen (relatório "E-commerce Brasil 2025"), <strong>32% dos novos lojistas em 2025 começaram com plano gratuito</strong> — contra apenas 9% em 2020. E o mais impressionante? Desses, 68% migraram para planos pagos dentro de 9 meses, com ticket médio 27% acima da média.
-              </p>
+              <div className="not-prose my-8 p-6 rounded-2xl bg-muted/50 border">
+                <div className="flex items-start gap-4">
+                  <TrendingUp className="w-8 h-8 text-primary flex-shrink-0" />
+                  <div>
+                    <p className="font-medium mb-2">Dados do E-bit Nielsen (relatório "E-commerce Brasil 2025")</p>
+                    <p className="text-muted-foreground">
+                      <strong>32% dos novos lojistas em 2025 começaram com plano gratuito</strong> — contra apenas 9% em 2020. E o mais impressionante? Desses, 68% migraram para planos pagos dentro de 9 meses, com ticket médio 27% acima da média.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <p>
+              <p className="!mb-6">
                 Ou seja: o gratuito não é mais um "jeitinho". É uma <strong>estratégia de entrada legítima e escalável</strong>.
               </p>
 
-              <p>
+              <p className="!mb-6">
                 Mas — e sempre há um "mas" — escolher mal pode custar tempo, energia e confiança. É como alugar um apartamento por um ano sem ver a planta: parece uma economia, até você descobrir que o banheiro fica na varanda.
               </p>
 
-              <p>Vamos, então, às opções que realmente valem a pena.</p>
+              <p className="!mb-8">Vamos, então, às opções que realmente valem a pena.</p>
 
-              <h2>Como avaliamos as melhores plataformas de e-commerce gratuitas em 2026?</h2>
+              <Separator className="my-12" />
 
-              <p>
+              <h2 className="!mt-12 !mb-6">Como avaliamos as melhores plataformas de e-commerce gratuitas em 2026?</h2>
+
+              <p className="!mb-6">
                 Para este guia, testamos <strong>14 plataformas por um período mínimo de 3 semanas cada</strong> — criando lojas reais (com produtos, formulários de contato, checkout funcionando) e simulando fluxos de venda.
               </p>
 
-              <p>Usamos cinco critérios-chave — todos ponderados por relevância prática, não por "features bonitas no site":</p>
+              <h3 className="!mt-8 !mb-4">Metodologia de avaliação</h3>
+
+              <p className="!mb-6">Usamos cinco critérios-chave — todos ponderados por relevância prática, não por "features bonitas no site":</p>
 
               {/* Table */}
               <div className="not-prose my-8 overflow-x-auto">
