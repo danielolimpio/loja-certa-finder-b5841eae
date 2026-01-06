@@ -36,7 +36,7 @@ export const blogCategories: BlogCategory[] = [
     name: "Plataformas",
     slug: "plataformas",
     description: "Análises e comparativos de plataformas",
-    count: 1
+    count: 2
   },
   {
     name: "Marketing Digital",
@@ -59,6 +59,24 @@ export const blogCategories: BlogCategory[] = [
 ];
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "shopify-vs-mercado-livre-2026",
+    slug: "shopify-vs-mercado-livre-2026",
+    title: "Shopify vs Mercado Livre: Qual Plataforma Escolher em 2026?",
+    excerpt: "Comparação detalhada entre Shopify e Mercado Livre. Descubra qual plataforma atende melhor seu modelo de negócio em 2026. Decisão inteligente!",
+    content: "",
+    author: {
+      name: "Equipe Lojas Grátis",
+      role: "Especialistas em E-commerce"
+    },
+    category: "plataformas",
+    tags: ["shopify", "mercado livre", "e-commerce", "comparativo", "2026", "loja virtual"],
+    featuredImage: "/images/artigos/shopify-vs-mercado-livre-2026.jpg",
+    publishedAt: "2026-01-06",
+    updatedAt: "2026-01-06",
+    readingTime: 18,
+    featured: true
+  },
   {
     id: "como-criar-loja-virtual-gratis-passo-a-passo",
     slug: "como-criar-loja-virtual-gratis-passo-a-passo",
