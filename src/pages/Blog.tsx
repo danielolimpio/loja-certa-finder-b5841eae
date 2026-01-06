@@ -201,7 +201,7 @@ const Blog = () => {
                         key={post.id}
                         className="group rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
                       >
-                        <Link to={`/blog/${post.slug}`} className="flex flex-col md:flex-row">
+                        <Link to={`/artigo/${post.slug}/`} className="flex flex-col md:flex-row">
                           {post.featuredImage && (
                             <div className="md:w-72 h-48 md:h-auto overflow-hidden">
                               <img 
