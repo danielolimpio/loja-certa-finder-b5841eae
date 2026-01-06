@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import PlatformDetail from "./pages/PlatformDetail";
 import MelhoresPlataformasEcommerceGratuitas2026 from "./pages/articles/MelhoresPlataformasEcommerceGratuitas2026";
+import ComocriarLojaVirtualGratis from "./pages/articles/ComocriarLojaVirtualGratis";
 import Ranking from "./pages/Ranking";
 import Compare from "./pages/Compare";
 import About from "./pages/About";
@@ -46,6 +47,8 @@ const AppContent = () => {
           <Route path="/blog/categoria/:slug" element={<BlogCategory />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/artigo/melhores-plataformas-e-commerce-gratuitas-2026" element={<MelhoresPlataformasEcommerceGratuitas2026 />} />
+          <Route path="/artigo/como-criar-loja-virtual-gratis-passo-a-passo" element={<ComocriarLojaVirtualGratis />} />
+          <Route path="/artigo/como-criar-loja-virtual-gratis-passo-a-passo/" element={<ComocriarLojaVirtualGratis />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

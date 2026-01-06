@@ -54,11 +54,29 @@ export const blogCategories: BlogCategory[] = [
     name: "Tutoriais",
     slug: "tutoriais",
     description: "Guias passo a passo",
-    count: 0
+    count: 1
   }
 ];
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "como-criar-loja-virtual-gratis-passo-a-passo",
+    slug: "como-criar-loja-virtual-gratis-passo-a-passo",
+    title: "Como Criar Loja Virtual Grátis: Passo a Passo Fácil para Iniciantes",
+    excerpt: "Aprenda como criar sua loja virtual grátis em minutos. Guia passo a passo com dicas essenciais para iniciantes. Comece seu negócio online hoje mesmo!",
+    content: "",
+    author: {
+      name: "Equipe Lojas Grátis",
+      role: "Especialistas em E-commerce"
+    },
+    category: "tutoriais",
+    tags: ["loja virtual grátis", "e-commerce", "empreendedorismo", "tutorial", "iniciantes", "nuvemshop"],
+    featuredImage: "/images/artigos/como-criar-loja-virtual-gratis-passo-a-passo.jpg",
+    publishedAt: "2026-01-06",
+    updatedAt: "2026-01-06",
+    readingTime: 22,
+    featured: true
+  },
   {
     id: "melhores-plataformas-e-commerce-gratuitas-2026",
     slug: "melhores-plataformas-e-commerce-gratuitas-2026",
