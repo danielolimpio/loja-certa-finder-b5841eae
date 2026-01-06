@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import PlatformDetail from "./pages/PlatformDetail";
 import MelhoresPlataformasEcommerceGratuitas2026 from "./pages/articles/MelhoresPlataformasEcommerceGratuitas2026";
 import ComocriarLojaVirtualGratis from "./pages/articles/ComocriarLojaVirtualGratis";
+import ShopifyVsMercadoLivre2026 from "./pages/articles/ShopifyVsMercadoLivre2026";
 import Ranking from "./pages/Ranking";
 import Compare from "./pages/Compare";
 import About from "./pages/About";
@@ -49,6 +50,8 @@ const AppContent = () => {
           <Route path="/artigo/melhores-plataformas-e-commerce-gratuitas-2026" element={<MelhoresPlataformasEcommerceGratuitas2026 />} />
           <Route path="/artigo/como-criar-loja-virtual-gratis-passo-a-passo" element={<ComocriarLojaVirtualGratis />} />
           <Route path="/artigo/como-criar-loja-virtual-gratis-passo-a-passo/" element={<ComocriarLojaVirtualGratis />} />
+          <Route path="/artigo/shopify-vs-mercado-livre-2026" element={<ShopifyVsMercadoLivre2026 />} />
+          <Route path="/artigo/shopify-vs-mercado-livre-2026/" element={<ShopifyVsMercadoLivre2026 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
