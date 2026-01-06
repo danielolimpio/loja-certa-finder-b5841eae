@@ -224,27 +224,31 @@ const MelhoresPlataformasEcommerceGratuitas2026 = () => {
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-ul:text-muted-foreground prose-ol:text-muted-foreground prose-blockquote:border-l-primary prose-blockquote:bg-muted/30 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic">
               
-              <p className="text-xl leading-relaxed">
+              <p className="text-xl leading-relaxed !mb-8">
                 Você já imaginou lançar uma loja virtual — vender artesanato, cursos, roupas, produtos digitais — mas travou naquela pergunta que paralisa tantos empreendedores: <strong>"E se eu investir e não der certo?"</strong>
               </p>
 
-              <p>
-                Eu também já estive aí. Em 2021, montei minha primeira loja para vender ebooks de finanças pessoais. Gastei três dias pesquisando planos, preços, plugins, hospedagem… até que, na madrugada de um sábado, cancelei tudo e fui dormir frustrado. Só recomecei meses depois — quando descobri que era possível começar de verdade, sem pagar um centavo, com ferramentas sérias e profissionais.
+              <p className="!mb-6">
+                Eu também já estive aí. Em 2021, montei minha primeira loja para vender ebooks de finanças pessoais. Gastei três dias pesquisando planos, preços, plugins, hospedagem… até que, na madrugada de um sábado, cancelei tudo e fui dormir frustrado.
+              </p>
+              
+              <p className="!mb-8">
+                Só recomecei meses depois — quando descobri que era possível começar de verdade, sem pagar um centavo, com ferramentas sérias e profissionais.
               </p>
 
-              <p>
-                Hoje, em 2026, não só é possível: é mais fácil do que nunca. O ecossistema brasileiro de e-commerce evoluiu radicalmente. Plataformas que antes cobravam do primeiro dia agora oferecem planos gratuitos robustos, com domínio próprio (sim, .com.br), integração com Pix, carrinho funcional e até suporte ao vivo — tudo sem exigir cartão de crédito.
+              <p className="!mb-6">
+                Hoje, em 2026, não só é possível: <strong>é mais fácil do que nunca</strong>. O ecossistema brasileiro de e-commerce evoluiu radicalmente. Plataformas que antes cobravam do primeiro dia agora oferecem planos gratuitos robustos, com domínio próprio (sim, .com.br), integração com Pix, carrinho funcional e até suporte ao vivo — tudo sem exigir cartão de crédito.
               </p>
 
-              <p>
+              <p className="!mb-8">
                 Mas atenção: nem toda "loja grátis" é realmente gratuita. Algumas escondem limitações cruciais — como número máximo de produtos, taxas por transação ou falta de personalização. Outras até funcionam bem, mas são tão complexas que assustam quem nunca mexeu em código.
               </p>
 
-              <p>
+              <p className="!mb-6">
                 É justamente isso que vamos desvendar aqui: <strong>as melhores plataformas de e-commerce gratuitas em 2026</strong>, após testes reais, comparações lado a lado e conversas com mais de 40 empreendedores que começaram do zero — e cresceram.
               </p>
 
-              <p>
+              <p className="!mb-8">
                 Este guia vai além da lista. Vamos decifrar quando o gratuito faz sentido (e quando é melhor pagar logo), quais armadilhas evitar, como escalar sem perder o controle — e, acima de tudo, como transformar sua ideia em vendas reais, mesmo com orçamento zero.
               </p>
 
@@ -795,41 +799,71 @@ const MelhoresPlataformasEcommerceGratuitas2026 = () => {
                 </p>
               </div>
 
-              <h2>O futuro do e-commerce gratuito em 2026 e além</h2>
+              <Separator className="my-12" />
 
-              <p>O que esperar para os próximos meses?</p>
+              <h2 className="!mt-12 !mb-6">O futuro do e-commerce gratuito em 2026 e além</h2>
 
-              <ul>
-                <li><strong>Integração com WhatsApp Commerce API:</strong> Plataformas como Tray e Nuvemshop já estão em fase beta para permitir vendas 100% dentro do WhatsApp — sem redirecionar para site.</li>
-                <li><strong>IA geradora de descrições:</strong> Dentro do painel, você coloca "Camiseta de algodão, preta, estampa minimalista" e a IA escreve descrição otimizada para SEO + sugere palavras-chave.</li>
-                <li><strong>Gratuidade por desempenho:</strong> Modelos como "R$ 0 enquanto suas vendas forem &lt; R$ 1.000/mês" devem se popularizar — alinhando custo ao resultado.</li>
-              </ul>
+              <h3 className="!mt-8 !mb-4">O que esperar para os próximos meses?</h3>
 
-              <blockquote>
+              <div className="not-prose my-8 space-y-4">
+                <div className="p-5 rounded-xl bg-card border flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">Integração com WhatsApp Commerce API</h4>
+                    <p className="text-muted-foreground">Plataformas como Tray e Nuvemshop já estão em fase beta para permitir vendas 100% dentro do WhatsApp — sem redirecionar para site.</p>
+                  </div>
+                </div>
+                
+                <div className="p-5 rounded-xl bg-card border flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+                    <Lightbulb className="w-5 h-5 text-blue-500" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">IA geradora de descrições</h4>
+                    <p className="text-muted-foreground">Dentro do painel, você coloca "Camiseta de algodão, preta, estampa minimalista" e a IA escreve descrição otimizada para SEO + sugere palavras-chave.</p>
+                  </div>
+                </div>
+                
+                <div className="p-5 rounded-xl bg-card border flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <TrendingUp className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">Gratuidade por desempenho</h4>
+                    <p className="text-muted-foreground">Modelos como "R$ 0 enquanto suas vendas forem &lt; R$ 1.000/mês" devem se popularizar — alinhando custo ao resultado.</p>
+                  </div>
+                </div>
+              </div>
+
+              <blockquote className="!my-8">
                 <p>A Li, fundadora da loja Tecido Vivo (cursos de costura online), resume bem: "Em 2020, eu precisava de R$ 1.500 para começar. Em 2026, comecei com R$ 0 e um celular. A barreira não é mais técnica. É emocional. Você tem que acreditar que merece estar aqui."</p>
               </blockquote>
 
-              <h2>Conclusão: Comece. Só isso.</h2>
+              <Separator className="my-12" />
 
-              <p>
+              <h2 className="!mt-12 !mb-8">Conclusão: Comece. Só isso.</h2>
+
+              <p className="!mb-6">
                 Não espere o "momento certo". Não espere o logo perfeito, o catálogo completo, o curso de marketing.
               </p>
 
-              <p>
-                <strong>Comece com o que você tem. Hoje.</strong>
+              <p className="text-xl font-semibold !mb-6">
+                Comece com o que você tem. Hoje.
               </p>
 
-              <p>
+              <p className="!mb-8">
                 Escolha uma das plataformas acima, cadastre 5 produtos reais, compartilhe com 10 pessoas de confiança e peça feedback sincero. Essa é a única métrica que importa no início: <em>alguém se importou o suficiente para responder?</em>
               </p>
 
-              <p>
-                Se sim — você tem algo.<br />
-                Se não — ajuste e tente de novo.<br />
-                Mas não pare.
-              </p>
+              <div className="not-prose my-8 p-6 rounded-xl bg-muted/50 border text-center">
+                <p className="text-lg mb-2">Se sim — <strong>você tem algo</strong>.</p>
+                <p className="text-lg mb-2">Se não — <strong>ajuste e tente de novo</strong>.</p>
+                <p className="text-xl font-bold text-primary">Mas não pare.</p>
+              </div>
 
-              <p>
+              <p className="!mb-8">
                 E se este guia te ajudou a dar o primeiro passo, compartilhe com alguém que está travado na mesma dúvida. Às vezes, a diferença entre um sonho e um negócio é um link bem compartilhado.
               </p>
 
