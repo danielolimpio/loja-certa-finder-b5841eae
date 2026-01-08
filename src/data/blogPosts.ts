@@ -36,7 +36,7 @@ export const blogCategories: BlogCategory[] = [
     name: "Plataformas",
     slug: "plataformas",
     description: "Análises e comparativos de plataformas",
-    count: 2
+    count: 3
   },
   {
     name: "Marketing Digital",
@@ -59,6 +59,24 @@ export const blogCategories: BlogCategory[] = [
 ];
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "plataforma-ecommerce-dominio-proprio-gratis",
+    slug: "plataforma-ecommerce-dominio-proprio-gratis",
+    title: "Plataforma E-commerce com Domínio Próprio Grátis: Onde Encontrar?",
+    excerpt: "Quer domínio próprio sem pagar? Descubra plataformas de e-commerce com domínio grátis em 2026. Ideal para quem busca profissionalismo sem custos!",
+    content: "",
+    author: {
+      name: "Equipe Lojas Grátis",
+      role: "Especialistas em E-commerce"
+    },
+    category: "plataformas",
+    tags: ["domínio próprio", "e-commerce", "loja virtual grátis", "shopify", "tray", "nuvemshop", "2026"],
+    featuredImage: "/images/artigos/plataforma-ecommerce-dominio-proprio-gratis.jpg",
+    publishedAt: "2026-01-08",
+    updatedAt: "2026-01-08",
+    readingTime: 15,
+    featured: true
+  },
   {
     id: "shopify-vs-mercado-livre-2026",
     slug: "shopify-vs-mercado-livre-2026",
