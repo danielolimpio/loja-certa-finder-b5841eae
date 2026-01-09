@@ -30,7 +30,7 @@ export const blogCategories: BlogCategory[] = [
     name: "E-commerce",
     slug: "e-commerce",
     description: "Dicas e estratégias para vender online",
-    count: 1
+    count: 2
   },
   {
     name: "Plataformas",
@@ -59,6 +59,24 @@ export const blogCategories: BlogCategory[] = [
 ];
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "loja-virtual-pagamento-pix-2026",
+    slug: "loja-virtual-pagamento-pix-2026",
+    title: "Loja Virtual com Pagamento via Pix: Plataformas que Aceitam em 2026",
+    excerpt: "Veja quais plataformas de e-commerce aceitam Pix em 2026. Facilite vendas com pagamento instantâneo e aumente conversões. Saiba onde configurar!",
+    content: "",
+    author: {
+      name: "Equipe Lojas Grátis",
+      role: "Especialistas em E-commerce"
+    },
+    category: "e-commerce",
+    tags: ["pix", "pagamento", "e-commerce", "loja virtual", "plataformas", "2026", "checkout"],
+    featuredImage: "/images/artigos/loja-virtual-pagamento-pix-2026.jpg",
+    publishedAt: "2026-01-09",
+    updatedAt: "2026-01-09",
+    readingTime: 16,
+    featured: true
+  },
   {
     id: "plataforma-ecommerce-dominio-proprio-gratis",
     slug: "plataforma-ecommerce-dominio-proprio-gratis",
