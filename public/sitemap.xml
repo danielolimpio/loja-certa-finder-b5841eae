@@ -226,6 +226,12 @@
 
   <!-- Artigos do Blog -->
   <url>
+    <loc>https://lojasgratis.com.br/artigo/loja-virtual-pagamento-pix-2026/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://lojasgratis.com.br/artigo/plataforma-ecommerce-dominio-proprio-gratis/</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
