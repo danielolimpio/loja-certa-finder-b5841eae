@@ -1,0 +1,30 @@
+# Lojas Grátis
+
+> Guia brasileiro para comparar e escolher as melhores plataformas de e-commerce — rankings, comparativos e artigos sobre como criar sua loja virtual grátis.
+
+Lojas Grátis ajuda empreendedores a escolher a plataforma certa para começar a vender online no Brasil, com análises imparciais de custos, recursos, integrações e facilidade de uso.
+
+## Pages
+
+- [Home](/): Ranking das melhores plataformas de e-commerce do Brasil.
+- [Ranking](/ranking): Ranking completo das 20 principais plataformas.
+- [Comparar](/comparar): Compare até 3 plataformas lado a lado.
+- [Sobre](/sobre): Quem somos e nossa metodologia.
+- [Contato](/contato): Fale com a equipe.
+- [Blog](/blog): Artigos sobre e-commerce, plataformas e vendas online.
+
+## Articles
+
+- [Melhores Plataformas de E-commerce Gratuitas 2026](/artigo/melhores-plataformas-e-commerce-gratuitas-2026): Guia completo das melhores opções gratuitas.
+- [Como Criar Loja Virtual Grátis Passo a Passo](/artigo/como-criar-loja-virtual-gratis-passo-a-passo/): Tutorial prático para iniciantes.
+- [Shopify vs Mercado Livre 2026](/artigo/shopify-vs-mercado-livre-2026/): Comparativo detalhado entre as duas plataformas.
+- [Plataforma E-commerce com Domínio Próprio Grátis](/artigo/plataforma-ecommerce-dominio-proprio-gratis/): Onde encontrar e como configurar.
+- [Loja Virtual com Pagamento via Pix 2026](/artigo/loja-virtual-pagamento-pix-2026/): Plataformas que aceitam Pix no Brasil.
+
+## Optional
+
+- [Privacidade](/privacidade): Política de privacidade.
+- [Termos](/termos): Termos de uso.
+- [Cookies](/cookies): Política de cookies.
+- [Transparência](/transparencia): Como geramos receita.
+- [Sitemap](/sitemap): Mapa do site.
