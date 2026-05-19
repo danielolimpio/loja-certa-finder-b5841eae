@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Lojas Grátis - Ranking das Melhores Plataformas de E-commerce 2025</title>
+        <title>Melhores Plataformas de E-commerce 2025 | Lojas Grátis</title>
         <meta name="description" content="Compare as melhores plataformas para criar sua loja virtual no Brasil. Análise completa de Nuvemshop, Shopify, Shopee, Mercado Livre e mais de 20 opções." />
         <link rel="canonical" href="https://lojasgratis.com.br/" />
         <meta name="keywords" content="loja virtual grátis, plataforma e-commerce, criar loja online, nuvemshop, shopify brasil" />
