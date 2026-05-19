@@ -206,7 +206,7 @@ const PlatformCard = ({
                     className={`h-4 w-4 transition-all duration-200 ${
                       i < Math.floor(rating)
                         ? "fill-yellow-400 text-yellow-400"
-                        : "text-muted-foreground/30"
+                        : "text-muted-foreground"
                     }`}
                   />
                 ))}

@@ -183,7 +183,7 @@ const PlatformDetail = () => {
                       className={`h-6 w-6 transition-all ${
                         i < Math.floor(platform.rating)
                           ? "fill-yellow-400 text-yellow-400"
-                          : "text-muted-foreground/30"
+                          : "text-muted-foreground"
                       }`}
                     />
                   ))}
@@ -671,7 +671,7 @@ const PlatformDetail = () => {
                         className={`h-6 w-6 ${
                           i < Math.floor(platform.rating)
                             ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
+                            : "text-muted-foreground"
                         }`}
                       />
                     ))}
