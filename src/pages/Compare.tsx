@@ -55,6 +55,10 @@ const Compare = () => {
         />
         <link rel="canonical" href="https://lojasgratis.com.br/comparar/" />
         <meta name="keywords" content="comparar ecommerce, comparação plataformas, melhor plataforma ecommerce" />
+        <meta property="og:title" content="Compare Plataformas de E-commerce | LojasGrátis" />
+        <meta property="og:description" content="Compare lado a lado as melhores plataformas de e-commerce do Brasil. Analise recursos, preços e escolha a ideal para seu negócio." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lojasgratis.com.br/comparar/" />
       </Helmet>
 
       <Header />

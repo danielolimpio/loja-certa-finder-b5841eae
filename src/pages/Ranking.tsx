@@ -17,6 +17,10 @@ const Ranking = () => {
         />
         <link rel="canonical" href="https://lojasgratis.com.br/ranking/" />
         <meta name="keywords" content="ranking ecommerce, melhores plataformas, loja virtual, comparação plataformas" />
+        <meta property="og:title" content="Ranking das Melhores Plataformas de E-commerce 2025" />
+        <meta property="og:description" content="Ranking atualizado das 20 melhores plataformas de e-commerce do Brasil. Compare custos, recursos e escolha a melhor opção." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lojasgratis.com.br/ranking/" />
       </Helmet>
 
       <Header />
