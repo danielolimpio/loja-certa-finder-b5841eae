@@ -17,6 +17,10 @@ const About = () => {
         <title>Sobre Nós - LojasGrátis | Ranking de Plataformas de E-commerce</title>
         <meta name="description" content="Conheça a LojasGrátis, o guia definitivo para comparar e escolher a melhor plataforma de e-commerce no Brasil. Análises imparciais e detalhadas." />
         <link rel="canonical" href="https://lojasgratis.com.br/sobre/" />
+        <meta property="og:title" content="Sobre Nós - LojasGrátis" />
+        <meta property="og:description" content="Conheça a LojasGrátis, o guia definitivo para comparar e escolher a melhor plataforma de e-commerce no Brasil." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lojasgratis.com.br/sobre/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">
