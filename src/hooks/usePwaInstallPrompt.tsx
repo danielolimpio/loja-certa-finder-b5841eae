@@ -19,6 +19,20 @@ export const usePwaInstallPrompt = () => {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
+    // Register the minimal service worker required by Chrome/Edge to
+    // mark the site as installable and fire beforeinstallprompt.
+    // Skip when running inside an iframe or on Lovable preview hosts.
+    const isInIframe = (() => {
+      try { return window.self !== window.top; } catch { return true; }
+    })();
+    const isPreviewHost =
+      window.location.hostname.includes("lovable.app") ||
+      window.location.hostname.includes("lovableproject.com");
+
+    if ("serviceWorker" in navigator && !isInIframe && !isPreviewHost) {
+      navigator.serviceWorker.register("/sw.js").catch(() => {});
+    }
+
     let deferredPrompt: BeforeInstallPromptEvent | null = null;
     let promptShown = false;
 
