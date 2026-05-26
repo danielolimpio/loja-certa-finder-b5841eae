@@ -26,12 +26,15 @@ import BlogCategory from "./pages/BlogCategory";
 import NotFound from "./pages/NotFound";
 import { usePageTracking } from "./hooks/usePageTracking";
 import { useScrollToTop } from "./hooks/useScrollToTop";
+import { usePwaInstallPrompt } from "./hooks/usePwaInstallPrompt";
 
 const queryClient = new QueryClient();
 
 const AppContent = () => {
   usePageTracking();
   useScrollToTop();
+  usePwaInstallPrompt();
+
   
   return (
     <Routes>
