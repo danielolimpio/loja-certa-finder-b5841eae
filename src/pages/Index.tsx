@@ -21,6 +21,30 @@ const Index = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lojas Grátis - Ranking de Plataformas E-commerce Brasil" />
         <meta name="twitter:description" content="Compare plataformas gratuitas e pagas para criar sua loja online." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Lojas Grátis",
+            url: "https://lojasgratis.com.br/",
+            description: "Compare as melhores plataformas para criar sua loja virtual no Brasil.",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://lojasgratis.com.br/?s={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Lojas Grátis",
+            url: "https://lojasgratis.com.br/",
+            logo: "https://lojasgratis.com.br/logo.png",
+            description: "Guia brasileiro para comparar e escolher as melhores plataformas de e-commerce.",
+          })}
+        </script>
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Header />

@@ -52,6 +52,35 @@ const BlogPost = () => {
         {post.tags.map(tag => (
           <meta key={tag} property="article:tag" content={tag} />
         ))}
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: post.title,
+            description: post.excerpt,
+            image: post.featuredImage ? `https://lojasgratis.com.br${post.featuredImage}` : undefined,
+            datePublished: post.publishedAt,
+            dateModified: post.updatedAt || post.publishedAt,
+            author: {
+              "@type": "Person",
+              name: post.author.name,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Lojas Grátis",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://lojasgratis.com.br/logo.png",
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://lojasgratis.com.br/blog/${post.slug}`,
+            },
+            keywords: post.tags.join(", "),
+          })}
+        </script>
       </Helmet>
 
       <Header />
