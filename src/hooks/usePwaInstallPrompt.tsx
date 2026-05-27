@@ -1,9 +1,5 @@
 import { useEffect } from "react";
 
-/**
- * Captures the browser's native beforeinstallprompt event and triggers the
- * native install modal. No custom UI is rendered.
- */
 interface BeforeInstallPromptEvent extends Event {
   readonly platforms: string[];
   readonly userChoice: Promise<{ outcome: "accepted" | "dismissed"; platform: string }>;
@@ -22,57 +18,69 @@ export const usePwaInstallPrompt = () => {
       window.location.hostname.includes("lovableproject.com");
 
     if ("serviceWorker" in navigator && !isInIframe && !isPreviewHost) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {});
+      navigator.serviceWorker.register("/sw.js")
+        .then(() => console.log("[PWA] SW registered"))
+        .catch((err) => console.warn("[PWA] SW register failed", err));
+    }
+
+    // Detect already installed (standalone) — skip prompt entirely
+    const isStandalone =
+      window.matchMedia("(display-mode: standalone)").matches ||
+      // @ts-ignore iOS
+      window.navigator.standalone === true;
+    if (isStandalone) {
+      console.log("[PWA] Already installed — skipping prompt");
+      return;
     }
 
     let deferredPrompt: BeforeInstallPromptEvent | null = null;
-    let userClicked = false;
-    let prompted = false;
+    let firing = false;
 
-    const triggerPrompt = async () => {
-      if (prompted || !deferredPrompt) return;
-      prompted = true;
+    const fire = () => {
+      if (firing || !deferredPrompt) return;
+      firing = true;
       const p = deferredPrompt;
       deferredPrompt = null;
-      try {
-        await p.prompt();
-        await p.userChoice;
-      } catch {
-        prompted = false;
-      }
+      console.log("[PWA] Calling prompt()");
+      // Call synchronously inside the user gesture
+      p.prompt();
+      p.userChoice
+        .then((choice) => {
+          console.log("[PWA] User choice:", choice.outcome);
+          firing = false;
+        })
+        .catch((err) => {
+          console.warn("[PWA] prompt() rejected", err);
+          firing = false;
+          deferredPrompt = p; // restore so next click can try again
+        });
     };
 
     const onBeforeInstallPrompt = (e: Event) => {
       e.preventDefault();
       deferredPrompt = e as BeforeInstallPromptEvent;
-      // If user already interacted, fire immediately (within the same task
-      // chain still counts as a user gesture in most cases).
-      if (userClicked) void triggerPrompt();
+      console.log("[PWA] beforeinstallprompt captured");
     };
 
     const onUserGesture = () => {
-      userClicked = true;
-      void triggerPrompt();
+      if (deferredPrompt) fire();
+      else console.log("[PWA] click but no deferredPrompt yet");
     };
 
     const onAppInstalled = () => {
+      console.log("[PWA] appinstalled");
       deferredPrompt = null;
     };
 
     window.addEventListener("beforeinstallprompt", onBeforeInstallPrompt);
-    // Listen to multiple gesture types; keep listening (don't remove after first)
-    // so subsequent clicks can also fire the prompt if the first attempt is
-    // dismissed by browser timing.
-    window.addEventListener("click", onUserGesture);
-    window.addEventListener("touchend", onUserGesture);
-    window.addEventListener("keydown", onUserGesture);
+    document.addEventListener("click", onUserGesture, true);
+    document.addEventListener("touchend", onUserGesture, true);
     window.addEventListener("appinstalled", onAppInstalled);
 
     return () => {
       window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
-      window.removeEventListener("click", onUserGesture);
-      window.removeEventListener("touchend", onUserGesture);
-      window.removeEventListener("keydown", onUserGesture);
+      document.removeEventListener("click", onUserGesture, true);
+      document.removeEventListener("touchend", onUserGesture, true);
       window.removeEventListener("appinstalled", onAppInstalled);
     };
   }, []);
