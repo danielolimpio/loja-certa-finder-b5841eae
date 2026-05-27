@@ -1,13 +1,8 @@
 import { useEffect } from "react";
 
 /**
- * Captures the browser's native beforeinstallprompt event (Android/Chrome/Edge desktop)
- * and triggers it on the user's first click — surfacing the browser's native
- * "Add to Home Screen" / "Install app" prompt. No custom UI is rendered.
- *
- * iOS Safari does not expose a programmatic install API; users must use the
- * native Share → "Add to Home Screen" menu. We intentionally do not render a
- * custom modal, per the requirement to use only native browser interfaces.
+ * Captures the browser's native beforeinstallprompt event and triggers the
+ * native install modal. No custom UI is rendered.
  */
 interface BeforeInstallPromptEvent extends Event {
   readonly platforms: string[];
@@ -19,9 +14,6 @@ export const usePwaInstallPrompt = () => {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    // Register the minimal service worker required by Chrome/Edge to
-    // mark the site as installable and fire beforeinstallprompt.
-    // Skip when running inside an iframe or on Lovable preview hosts.
     const isInIframe = (() => {
       try { return window.self !== window.top; } catch { return true; }
     })();
@@ -34,39 +26,53 @@ export const usePwaInstallPrompt = () => {
     }
 
     let deferredPrompt: BeforeInstallPromptEvent | null = null;
-    let promptShown = false;
+    let userClicked = false;
+    let prompted = false;
+
+    const triggerPrompt = async () => {
+      if (prompted || !deferredPrompt) return;
+      prompted = true;
+      const p = deferredPrompt;
+      deferredPrompt = null;
+      try {
+        await p.prompt();
+        await p.userChoice;
+      } catch {
+        prompted = false;
+      }
+    };
 
     const onBeforeInstallPrompt = (e: Event) => {
       e.preventDefault();
       deferredPrompt = e as BeforeInstallPromptEvent;
+      // If user already interacted, fire immediately (within the same task
+      // chain still counts as a user gesture in most cases).
+      if (userClicked) void triggerPrompt();
     };
 
-    const onFirstClick = async () => {
-      if (promptShown || !deferredPrompt) return;
-      promptShown = true;
-      try {
-        await deferredPrompt.prompt();
-        await deferredPrompt.userChoice;
-      } catch {
-        // user gesture/timing issues — silently ignore
-      } finally {
-        deferredPrompt = null;
-        window.removeEventListener("click", onFirstClick);
-      }
+    const onUserGesture = () => {
+      userClicked = true;
+      void triggerPrompt();
     };
 
     const onAppInstalled = () => {
       deferredPrompt = null;
-      window.removeEventListener("click", onFirstClick);
     };
 
     window.addEventListener("beforeinstallprompt", onBeforeInstallPrompt);
-    window.addEventListener("click", onFirstClick);
+    // Listen to multiple gesture types; keep listening (don't remove after first)
+    // so subsequent clicks can also fire the prompt if the first attempt is
+    // dismissed by browser timing.
+    window.addEventListener("click", onUserGesture);
+    window.addEventListener("touchend", onUserGesture);
+    window.addEventListener("keydown", onUserGesture);
     window.addEventListener("appinstalled", onAppInstalled);
 
     return () => {
       window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
-      window.removeEventListener("click", onFirstClick);
+      window.removeEventListener("click", onUserGesture);
+      window.removeEventListener("touchend", onUserGesture);
+      window.removeEventListener("keydown", onUserGesture);
       window.removeEventListener("appinstalled", onAppInstalled);
     };
   }, []);
