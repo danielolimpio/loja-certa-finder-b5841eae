@@ -1,26 +1,31 @@
 # Robots.txt for lojasgratis.com.br
-# Last updated: 2025-12-22
+# Last updated: 2026-06-02
 
+# Google
 User-agent: Googlebot
 Allow: /
 Disallow: /hello-world/
 Disallow: /category/
+Disallow: /category/uncategorized/
+Disallow: /author/
 
+# Bing
 User-agent: Bingbot
 Allow: /
 Disallow: /hello-world/
 Disallow: /category/
+Disallow: /category/uncategorized/
+Disallow: /author/
+Crawl-delay: 1
 
+# Social crawlers
 User-agent: Twitterbot
 Allow: /
-Disallow: /hello-world/
-Disallow: /category/
 
 User-agent: facebookexternalhit
 Allow: /
-Disallow: /hello-world/
-Disallow: /category/
 
+# General crawlers
 User-agent: *
 Allow: /
 Disallow: /hello-world/
@@ -28,5 +33,8 @@ Disallow: /category/
 Disallow: /category/uncategorized/
 Disallow: /author/
 
-# Sitemap
+# Sitemap location
 Sitemap: https://lojasgratis.com.br/sitemap.xml
+
+# Preferred host (Yandex)
+Host: https://lojasgratis.com.br
