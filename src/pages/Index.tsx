@@ -10,17 +10,32 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Melhores Plataformas de E-commerce 2025 | Lojas Grátis</title>
-        <meta name="description" content="Compare as melhores plataformas para criar sua loja virtual no Brasil. Análise completa de Nuvemshop, Shopify, Shopee, Mercado Livre e mais de 20 opções." />
+        <title>Loja Virtual Grátis 2026: As 20 Melhores Plataformas do Brasil</title>
+        <meta name="description" content="Descubra a plataforma ideal para criar sua loja virtual grátis em 2026. Ranking imparcial com Nuvemshop, Shopify, Shopee e Mercado Livre — compare preços e comece a vender hoje." />
         <link rel="canonical" href="https://lojasgratis.com.br/" />
-        <meta name="keywords" content="loja virtual grátis, plataforma e-commerce, criar loja online, nuvemshop, shopify brasil" />
-        <meta property="og:title" content="Lojas Grátis - Ranking das Melhores Plataformas de E-commerce" />
-        <meta property="og:description" content="Compare e escolha a melhor plataforma para sua loja virtual no Brasil. Análise completa com custos, recursos e facilidade de uso." />
+        <meta name="keywords" content="loja virtual grátis, criar loja virtual grátis, plataforma loja virtual, plataforma e-commerce grátis, melhor plataforma e-commerce, criar loja online grátis, melhor site para vender online, plataforma para vender online, loja online grátis, e-commerce gratuito, criar loja virtual sem mensalidade, nuvemshop, shopify brasil, shopee, mercado livre, melhor plataforma loja virtual, abrir loja virtual grátis, comparar plataformas ecommerce, loja virtual grátis para sempre, plataforma vendas online" />
+        <meta property="og:title" content="Loja Virtual Grátis 2026: As 20 Melhores Plataformas do Brasil" />
+        <meta property="og:description" content="Ranking 2026 das melhores plataformas grátis para criar sua loja online. Compare preços, recursos e comece a vender hoje mesmo." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lojasgratis.com.br/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lojas Grátis - Ranking de Plataformas E-commerce Brasil" />
-        <meta name="twitter:description" content="Compare plataformas gratuitas e pagas para criar sua loja online." />
+        <meta name="twitter:title" content="Loja Virtual Grátis 2026: As 20 Melhores Plataformas do Brasil" />
+        <meta name="twitter:description" content="Ranking imparcial das melhores plataformas grátis para abrir sua loja online no Brasil." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Ranking das Melhores Plataformas de E-commerce do Brasil 2026",
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "numberOfItems": platforms.length,
+            "itemListElement": platforms.slice(0, 10).map((p) => ({
+              "@type": "ListItem",
+              position: p.rank,
+              name: p.name,
+              url: `https://lojasgratis.com.br/plataformas/${p.slug}`
+            }))
+          })}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

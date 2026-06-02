@@ -24,10 +24,14 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Blog | Lojas Grátis - Dicas e Estratégias para E-commerce</title>
-        <meta name="description" content="Aprenda tudo sobre e-commerce, marketing digital e empreendedorismo. Dicas práticas para montar e crescer sua loja virtual no Brasil." />
-        <meta name="keywords" content="blog e-commerce, dicas loja virtual, marketing digital, empreendedorismo online" />
+        <title>Blog Lojas Grátis: Como Vender Mais na Sua Loja Virtual em 2026</title>
+        <meta name="description" content="Tutoriais passo a passo, estratégias de tráfego e segredos para escalar sua loja virtual grátis. Conteúdo novo toda semana para empreendedores brasileiros." />
+        <meta name="keywords" content="blog e-commerce, como criar loja virtual grátis, dicas loja virtual, marketing digital ecommerce, tutorial loja online, vender mais online, tráfego loja virtual, shopify tutorial, nuvemshop tutorial, empreendedorismo digital" />
         <link rel="canonical" href="https://lojasgratis.com.br/blog/" />
+        <meta property="og:title" content="Blog Lojas Grátis: Como Vender Mais na Sua Loja Virtual em 2026" />
+        <meta property="og:description" content="Tutoriais e estratégias para escalar sua loja virtual grátis. Conteúdo novo toda semana." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lojasgratis.com.br/blog/" />
       </Helmet>
 
       <Header />

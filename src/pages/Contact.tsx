@@ -12,9 +12,14 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contato - LojasGrátis | Entre em Contato Conosco</title>
-        <meta name="description" content="Entre em contato com a equipe LojasGrátis. Envie suas dúvidas, sugestões ou feedback sobre plataformas de e-commerce." />
+        <title>Contato Lojas Grátis: Tire Suas Dúvidas sobre Loja Virtual</title>
+        <meta name="description" content="Fale com a equipe Lojas Grátis. Tire dúvidas sobre qual plataforma escolher, peça uma análise personalizada ou sugira uma plataforma — respondemos rápido." />
+        <meta name="keywords" content="contato lojas grátis, ajuda escolher plataforma ecommerce, consultoria loja virtual grátis, fale conosco lojas grátis" />
         <link rel="canonical" href="https://lojasgratis.com.br/contato/" />
+        <meta property="og:title" content="Contato Lojas Grátis: Tire Suas Dúvidas sobre Loja Virtual" />
+        <meta property="og:description" content="Fale com a equipe Lojas Grátis e descubra a melhor plataforma para sua loja virtual." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lojasgratis.com.br/contato/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

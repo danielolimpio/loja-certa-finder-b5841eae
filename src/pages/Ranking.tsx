@@ -10,15 +10,15 @@ const Ranking = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Helmet>
-        <title>Ranking das Melhores Plataformas de E-commerce 2025</title>
-        <meta 
-          name="description" 
-          content="Ranking atualizado das 20 melhores plataformas de e-commerce do Brasil. Compare custos, recursos e escolha a melhor opção." 
+        <title>Ranking 2026: Top 20 Plataformas de E-commerce Grátis no Brasil</title>
+        <meta
+          name="description"
+          content="Veja o ranking completo das 20 melhores plataformas para criar loja virtual grátis em 2026. Preços, recursos, prós e contras lado a lado — escolha a sua em 2 minutos."
         />
         <link rel="canonical" href="https://lojasgratis.com.br/ranking/" />
-        <meta name="keywords" content="ranking ecommerce, melhores plataformas, loja virtual, comparação plataformas" />
-        <meta property="og:title" content="Ranking das Melhores Plataformas de E-commerce 2025" />
-        <meta property="og:description" content="Ranking atualizado das 20 melhores plataformas de e-commerce do Brasil. Compare custos, recursos e escolha a melhor opção." />
+        <meta name="keywords" content="ranking plataformas e-commerce, melhor plataforma loja virtual, ranking loja virtual, top plataformas ecommerce 2026, melhor site para vender online, plataforma e-commerce grátis, comparar plataformas, nuvemshop, shopify, shopee, mercado livre, vtex, wix, loja integrada, tray, bagy" />
+        <meta property="og:title" content="Ranking 2026: Top 20 Plataformas de E-commerce Grátis no Brasil" />
+        <meta property="og:description" content="Ranking completo e imparcial das 20 melhores plataformas para abrir sua loja virtual grátis em 2026." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lojasgratis.com.br/ranking/" />
       </Helmet>

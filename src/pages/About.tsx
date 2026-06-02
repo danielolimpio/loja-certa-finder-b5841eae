@@ -14,11 +14,12 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Sobre Nós - LojasGrátis | Ranking de Plataformas de E-commerce</title>
-        <meta name="description" content="Conheça a LojasGrátis, o guia definitivo para comparar e escolher a melhor plataforma de e-commerce no Brasil. Análises imparciais e detalhadas." />
+        <title>Sobre o Lojas Grátis: Metodologia Imparcial de Análise 2026</title>
+        <meta name="description" content="Quem somos e como ranqueamos as melhores plataformas de e-commerce do Brasil. Critérios transparentes, testes reais e análises 100% independentes desde 2023." />
+        <meta name="keywords" content="sobre lojas grátis, metodologia ranking ecommerce, análise imparcial plataformas, quem somos lojas grátis" />
         <link rel="canonical" href="https://lojasgratis.com.br/sobre/" />
-        <meta property="og:title" content="Sobre Nós - LojasGrátis" />
-        <meta property="og:description" content="Conheça a LojasGrátis, o guia definitivo para comparar e escolher a melhor plataforma de e-commerce no Brasil." />
+        <meta property="og:title" content="Sobre o Lojas Grátis: Metodologia Imparcial de Análise 2026" />
+        <meta property="og:description" content="Quem somos e como avaliamos as melhores plataformas de e-commerce do Brasil de forma 100% independente." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lojasgratis.com.br/sobre/" />
       </Helmet>

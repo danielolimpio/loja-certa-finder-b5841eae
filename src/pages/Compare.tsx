@@ -48,15 +48,15 @@ const Compare = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Helmet>
-        <title>Compare Plataformas de E-commerce | LojasGrátis</title>
-        <meta 
-          name="description" 
-          content="Compare lado a lado as melhores plataformas de e-commerce do Brasil. Analise recursos, preços e escolha a ideal para seu negócio." 
+        <title>Comparar Plataformas de E-commerce 2026: 3 lado a lado em 60s</title>
+        <meta
+          name="description"
+          content="Compare até 3 plataformas de e-commerce lado a lado: preços, recursos, taxas e integrações. Descubra em 60 segundos qual é a melhor para sua loja virtual grátis."
         />
         <link rel="canonical" href="https://lojasgratis.com.br/comparar/" />
-        <meta name="keywords" content="comparar ecommerce, comparação plataformas, melhor plataforma ecommerce" />
-        <meta property="og:title" content="Compare Plataformas de E-commerce | LojasGrátis" />
-        <meta property="og:description" content="Compare lado a lado as melhores plataformas de e-commerce do Brasil. Analise recursos, preços e escolha a ideal para seu negócio." />
+        <meta name="keywords" content="comparar plataformas e-commerce, comparar loja virtual, nuvemshop vs shopify, shopify vs mercado livre, melhor plataforma para vender online, comparador ecommerce, plataforma e-commerce grátis comparação" />
+        <meta property="og:title" content="Comparar Plataformas de E-commerce 2026: 3 lado a lado em 60s" />
+        <meta property="og:description" content="Compare até 3 plataformas de e-commerce lado a lado e escolha a melhor para sua loja virtual grátis." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lojasgratis.com.br/comparar/" />
       </Helmet>
