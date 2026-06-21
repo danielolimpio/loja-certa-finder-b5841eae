@@ -5,11 +5,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { platforms } from "@/data/platforms";
+import { getPlatformFaqs } from "@/data/faqs";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const PlatformDetail = () => {
   const { slug } = useParams();
@@ -30,6 +32,7 @@ const PlatformDetail = () => {
   }
 
   const complexityLabel = ["", "Muito Fácil", "Fácil", "Moderado", "Difícil", "Muito Difícil"];
+  const platformFaqs = getPlatformFaqs(platform);
 
   // JSON-LD Structured Data for rich snippets
   const jsonLd = {
@@ -95,6 +98,19 @@ const PlatformDetail = () => {
     ]
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": platformFaqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
@@ -113,6 +129,9 @@ const PlatformDetail = () => {
         </script>
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbJsonLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqJsonLd)}
         </script>
       </Helmet>
       <div className="min-h-screen bg-background">
@@ -655,6 +674,30 @@ const PlatformDetail = () => {
                 </CardContent>
               </Card>
             )}
+
+            {/* FAQ SEO */}
+            <Card className="shadow-lg border-2 border-primary/20">
+              <CardHeader>
+                <CardTitle className="text-2xl">Perguntas frequentes sobre {platform.name}</CardTitle>
+                <CardDescription>
+                  Dúvidas comuns sobre preço, loja virtual, marketplace, pagamentos, SEO, integrações e vendas online.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Accordion type="single" collapsible className="w-full">
+                  {platformFaqs.map((faq, index) => (
+                    <AccordionItem key={faq.question} value={`faq-${index}`}>
+                      <AccordionTrigger className="text-left text-base font-semibold hover:no-underline">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-base leading-relaxed text-muted-foreground">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Sidebar */}
