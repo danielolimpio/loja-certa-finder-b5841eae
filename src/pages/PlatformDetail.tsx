@@ -674,6 +674,30 @@ const PlatformDetail = () => {
                 </CardContent>
               </Card>
             )}
+
+            {/* FAQ SEO */}
+            <Card className="shadow-lg border-2 border-primary/20">
+              <CardHeader>
+                <CardTitle className="text-2xl">Perguntas frequentes sobre {platform.name}</CardTitle>
+                <CardDescription>
+                  Dúvidas comuns sobre preço, loja virtual, marketplace, pagamentos, SEO, integrações e vendas online.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Accordion type="single" collapsible className="w-full">
+                  {platformFaqs.map((faq, index) => (
+                    <AccordionItem key={faq.question} value={`faq-${index}`}>
+                      <AccordionTrigger className="text-left text-base font-semibold hover:no-underline">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-base leading-relaxed text-muted-foreground">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Sidebar */}
