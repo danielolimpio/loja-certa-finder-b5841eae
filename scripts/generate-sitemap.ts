@@ -51,6 +51,7 @@ const blogCategories = [
 
 // Blog posts (mirrors blogPosts.ts)
 const blogPosts = [
+  { slug: "como-precificar-produtos-para-vender-online", lastmod: "2026-01-12" },
   { slug: "loja-virtual-pagamento-pix-2026", lastmod: "2026-01-09" },
   { slug: "plataforma-ecommerce-dominio-proprio-gratis", lastmod: "2026-01-08" },
   { slug: "shopify-vs-mercado-livre-2026", lastmod: "2026-01-06" },
@@ -65,6 +66,7 @@ const dedicatedArticles = [
   { slug: "shopify-vs-mercado-livre-2026", lastmod: "2026-01-06" },
   { slug: "plataforma-ecommerce-dominio-proprio-gratis", lastmod: "2026-01-08" },
   { slug: "loja-virtual-pagamento-pix-2026", lastmod: "2026-01-09" },
+  { slug: "como-precificar-produtos-para-vender-online", lastmod: "2026-01-12" },
 ];
 
 const today = new Date().toISOString().split("T")[0];

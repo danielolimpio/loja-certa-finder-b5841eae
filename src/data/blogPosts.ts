@@ -30,7 +30,7 @@ export const blogCategories: BlogCategory[] = [
     name: "E-commerce",
     slug: "e-commerce",
     description: "Dicas e estratégias para vender online",
-    count: 2
+    count: 3
   },
   {
     name: "Plataformas",
@@ -59,6 +59,24 @@ export const blogCategories: BlogCategory[] = [
 ];
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "como-precificar-produtos-para-vender-online",
+    slug: "como-precificar-produtos-para-vender-online",
+    title: "Como Precificar Produtos para Vender Online: Guia Definitivo 2026",
+    excerpt: "Pare de chutar preço. Aprenda fórmulas práticas, margem saudável e estratégias usadas por lojistas que faturam alto — com exemplos reais e planilha.",
+    content: "",
+    author: {
+      name: "Equipe Lojas Grátis",
+      role: "Especialistas em E-commerce"
+    },
+    category: "e-commerce",
+    tags: ["precificação", "como precificar produtos", "margem de lucro", "markup", "preço de venda", "e-commerce", "estratégia"],
+    featuredImage: "/images/artigos/como-precificar-produtos-vender-online.jpg",
+    publishedAt: "2026-01-12",
+    updatedAt: "2026-01-12",
+    readingTime: 17,
+    featured: true
+  },
   {
     id: "loja-virtual-pagamento-pix-2026",
     slug: "loja-virtual-pagamento-pix-2026",

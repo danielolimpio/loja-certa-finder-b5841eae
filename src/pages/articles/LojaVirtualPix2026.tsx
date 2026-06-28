@@ -14,6 +14,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const LojaVirtualPix2026 = () => {
   const articleData = {
@@ -962,6 +964,9 @@ const LojaVirtualPix2026 = () => {
                 </AccordionItem>
               </Accordion>
             </section>
+
+            <ArticleAuthorBio />
+            <RelatedArticles currentSlug="loja-virtual-pagamento-pix-2026" />
 
             {/* Back Button */}
             <div className="flex justify-center mt-12">

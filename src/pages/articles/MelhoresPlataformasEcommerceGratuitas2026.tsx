@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, Share2, User, Tag, Lightbulb, AlertTriangle, CheckCircle, TrendingUp } from "lucide-react";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
+import RelatedArticles from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -933,6 +935,9 @@ const MelhoresPlataformasEcommerceGratuitas2026 = () => {
               </p>
 
             </article>
+
+            <ArticleAuthorBio />
+            <RelatedArticles currentSlug="melhores-plataformas-e-commerce-gratuitas-2026" />
 
             {/* Tags */}
             <div className="mt-12 pt-8 border-t">

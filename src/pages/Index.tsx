@@ -1,10 +1,13 @@
 import { Helmet } from "react-helmet-async";
-import { ArrowDown, CheckCircle2, Trophy, Search } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowDown, ArrowRight, CheckCircle2, Trophy, Search, Calendar, Clock, BookOpen } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PlatformCard from "@/components/PlatformCard";
 import { platforms } from "@/data/platforms";
+import { blogPosts } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   return (
@@ -171,6 +174,80 @@ const Index = () => {
           <Button size="lg" variant="secondary">
             Ler o Guia Completo
           </Button>
+        </div>
+      </section>
+
+      {/* Últimos artigos */}
+      <section className="container pb-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 mb-4">
+              <BookOpen className="h-7 w-7 text-primary" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+              Últimos artigos do blog
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Tutoriais, comparativos e estratégias atualizados para vender mais na sua loja virtual.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {blogPosts.slice(0, 6).map((post) => (
+              <Link
+                key={post.id}
+                to={`/artigo/${post.slug}/`}
+                className="group rounded-2xl overflow-hidden bg-card border border-border/60 hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                {post.featuredImage && (
+                  <div className="aspect-video overflow-hidden bg-muted">
+                    <img
+                      src={post.featuredImage}
+                      alt={post.title}
+                      loading="lazy"
+                      width={1280}
+                      height={720}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="p-5 flex flex-col flex-1">
+                  <Badge variant="secondary" className="self-start mb-3 text-xs capitalize">
+                    {post.category}
+                  </Badge>
+                  <h3 className="text-base font-bold leading-snug mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
+                    {post.excerpt}
+                  </p>
+                  <div className="mt-auto flex items-center gap-3 text-xs text-muted-foreground">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-3 h-3" />
+                      {new Date(post.publishedAt).toLocaleDateString("pt-BR", {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3 h-3" />
+                      {post.readingTime} min
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-10">
+            <Button asChild size="lg" variant="outline" className="gap-2 rounded-full px-8">
+              <Link to="/blog/">
+                Ver Todos Artigos
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
