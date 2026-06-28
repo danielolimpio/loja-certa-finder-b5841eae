@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, Share2, User, Tag, Lightbulb, AlertTriangle, CheckCircle, TrendingUp, Target, Zap, ShieldCheck, ExternalLink, ArrowRight, MessageCircle, Store, CreditCard, Package, Settings, Globe, Search } from "lucide-react";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
+import RelatedArticles from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -1141,6 +1143,9 @@ const ComocriarLojaVirtualGratis = () => {
               </CardContent>
             </Card>
           </div>
+
+          <ArticleAuthorBio />
+          <RelatedArticles currentSlug="como-criar-loja-virtual-gratis-passo-a-passo" />
 
           {/* Share and Navigation */}
           <div className="mt-12 pt-8 border-t">
