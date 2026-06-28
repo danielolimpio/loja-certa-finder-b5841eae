@@ -11,6 +11,7 @@ import ComocriarLojaVirtualGratis from "./pages/articles/ComocriarLojaVirtualGra
 import ShopifyVsMercadoLivre2026 from "./pages/articles/ShopifyVsMercadoLivre2026";
 import PlataformaEcommerceDominioProprio from "./pages/articles/PlataformaEcommerceDominioProprio";
 import LojaVirtualPix2026 from "./pages/articles/LojaVirtualPix2026";
+import ComoPrecificarProdutos from "./pages/articles/ComoPrecificarProdutos";
 import Ranking from "./pages/Ranking";
 import Compare from "./pages/Compare";
 import About from "./pages/About";
@@ -61,6 +62,8 @@ const AppContent = () => {
           <Route path="/artigo/plataforma-ecommerce-dominio-proprio-gratis/" element={<PlataformaEcommerceDominioProprio />} />
           <Route path="/artigo/loja-virtual-pagamento-pix-2026" element={<LojaVirtualPix2026 />} />
           <Route path="/artigo/loja-virtual-pagamento-pix-2026/" element={<LojaVirtualPix2026 />} />
+          <Route path="/artigo/como-precificar-produtos-para-vender-online" element={<ComoPrecificarProdutos />} />
+          <Route path="/artigo/como-precificar-produtos-para-vender-online/" element={<ComoPrecificarProdutos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
