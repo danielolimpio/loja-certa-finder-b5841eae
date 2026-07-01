@@ -12,6 +12,8 @@ import ShopifyVsMercadoLivre2026 from "./pages/articles/ShopifyVsMercadoLivre202
 import PlataformaEcommerceDominioProprio from "./pages/articles/PlataformaEcommerceDominioProprio";
 import LojaVirtualPix2026 from "./pages/articles/LojaVirtualPix2026";
 import ComoPrecificarProdutos from "./pages/articles/ComoPrecificarProdutos";
+import SeoParaEcommerce2026 from "./pages/articles/SeoParaEcommerce2026";
+import InteligenciaArtificialEcommerce2026 from "./pages/articles/InteligenciaArtificialEcommerce2026";
 import Ranking from "./pages/Ranking";
 import Compare from "./pages/Compare";
 import About from "./pages/About";
@@ -64,6 +66,10 @@ const AppContent = () => {
           <Route path="/artigo/loja-virtual-pagamento-pix-2026/" element={<LojaVirtualPix2026 />} />
           <Route path="/artigo/como-precificar-produtos-para-vender-online" element={<ComoPrecificarProdutos />} />
           <Route path="/artigo/como-precificar-produtos-para-vender-online/" element={<ComoPrecificarProdutos />} />
+          <Route path="/artigo/seo-para-ecommerce-guia-completo-2026" element={<SeoParaEcommerce2026 />} />
+          <Route path="/artigo/seo-para-ecommerce-guia-completo-2026/" element={<SeoParaEcommerce2026 />} />
+          <Route path="/artigo/inteligencia-artificial-no-ecommerce-2026" element={<InteligenciaArtificialEcommerce2026 />} />
+          <Route path="/artigo/inteligencia-artificial-no-ecommerce-2026/" element={<InteligenciaArtificialEcommerce2026 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
