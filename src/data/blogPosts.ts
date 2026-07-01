@@ -60,6 +60,36 @@ export const blogCategories: BlogCategory[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "inteligencia-artificial-no-ecommerce-2026",
+    slug: "inteligencia-artificial-no-ecommerce-2026",
+    title: "Inteligência Artificial no E-commerce: Como Vender Mais em 2026",
+    excerpt: "Chatbots, recomendação, precificação dinâmica e IA generativa: veja como usar Inteligência Artificial no e-commerce em 2026 para vender mais sem aumentar a equipe.",
+    content: "",
+    author: { name: "Equipe Lojas Grátis", role: "Especialistas em E-commerce" },
+    category: "tecnologia",
+    tags: ["inteligência artificial", "ia no ecommerce", "chatbot", "automação", "ia generativa", "tendências 2026", "varejo digital"],
+    featuredImage: "/images/artigos/ia-inteligencia-artificial-ecommerce.jpg",
+    publishedAt: "2026-02-06",
+    updatedAt: "2026-02-06",
+    readingTime: 21,
+    featured: true
+  },
+  {
+    id: "seo-para-ecommerce-guia-completo-2026",
+    slug: "seo-para-ecommerce-guia-completo-2026",
+    title: "SEO para E-commerce em 2026: Guia Completo para Ranquear no Google",
+    excerpt: "Guia definitivo de SEO para e-commerce em 2026: técnico, on-page, conteúdo, backlinks e IA. Aprenda a ranquear no Google e reduzir o CAC da sua loja virtual.",
+    content: "",
+    author: { name: "Equipe Lojas Grátis", role: "Especialistas em E-commerce" },
+    category: "marketing-digital",
+    tags: ["seo", "seo ecommerce", "google", "tráfego orgânico", "core web vitals", "schema markup", "2026"],
+    featuredImage: "/images/artigos/seo-para-ecommerce-2026.jpg",
+    publishedAt: "2026-02-04",
+    updatedAt: "2026-02-04",
+    readingTime: 22,
+    featured: true
+  },
+  {
     id: "como-precificar-produtos-para-vender-online",
     slug: "como-precificar-produtos-para-vender-online",
     title: "Como Precificar Produtos para Vender Online: Guia Definitivo 2026",
