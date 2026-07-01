@@ -51,6 +51,8 @@ const blogCategories = [
 
 // Blog posts (mirrors blogPosts.ts)
 const blogPosts = [
+  { slug: "inteligencia-artificial-no-ecommerce-2026", lastmod: "2026-02-06" },
+  { slug: "seo-para-ecommerce-guia-completo-2026", lastmod: "2026-02-04" },
   { slug: "como-precificar-produtos-para-vender-online", lastmod: "2026-01-12" },
   { slug: "loja-virtual-pagamento-pix-2026", lastmod: "2026-01-09" },
   { slug: "plataforma-ecommerce-dominio-proprio-gratis", lastmod: "2026-01-08" },
@@ -67,6 +69,8 @@ const dedicatedArticles = [
   { slug: "plataforma-ecommerce-dominio-proprio-gratis", lastmod: "2026-01-08" },
   { slug: "loja-virtual-pagamento-pix-2026", lastmod: "2026-01-09" },
   { slug: "como-precificar-produtos-para-vender-online", lastmod: "2026-01-12" },
+  { slug: "seo-para-ecommerce-guia-completo-2026", lastmod: "2026-02-04" },
+  { slug: "inteligencia-artificial-no-ecommerce-2026", lastmod: "2026-02-06" },
 ];
 
 const today = new Date().toISOString().split("T")[0];
